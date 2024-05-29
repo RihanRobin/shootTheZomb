@@ -19,6 +19,8 @@ namespace Game_Development
         int playerHealth = 100;
         int playerSpeed = 5;
         int zombieSpeed = 3;
+        string facing = "up";
+        string shootDirection;
         //Declare Lists
         List<PictureBox> zombieList = new List<PictureBox>();
         public FormGame()
@@ -64,23 +66,56 @@ namespace Game_Development
 
         private void Form1_KeyDown(object sender, KeyEventArgs e)
         {
-            if (e.KeyCode == Keys.Right || e.KeyCode == Keys.D)
+            //Player Movement
+
+            if (e.KeyCode == Keys.D)
             {
                 right = true;
+                facing = "right";
+
             }
-            if (e.KeyCode == Keys.Left || e.KeyCode == Keys.A)
+            if (e.KeyCode == Keys.A)
             {
                 left = true;
+                facing = "left";
             }
-            if (e.KeyCode == Keys.Up || e.KeyCode == Keys.W)
+            if (e.KeyCode == Keys.W)
             {
                 up = true;
+                facing = "up";
             }
-            if (e.KeyCode == Keys.Down || e.KeyCode == Keys.S)
+            if (e.KeyCode == Keys.S)
             {
                 down = true;
+                facing = "down";
             }
-            if( e.KeyCode == Keys.Escape)
+
+            //Bullet Movement
+
+            if (e.KeyCode == Keys.Right)
+            {
+                facing = "right";
+                shootDirection = "right";
+            }
+            if (e.KeyCode == Keys.Left)
+            {
+                facing = "left";
+                shootDirection = "left";
+            }
+            if (e.KeyCode == Keys.Up)
+            {
+                facing = "up";
+                shootDirection = "up";
+            }
+            if (e.KeyCode == Keys.Down)
+            {
+                facing = "down";
+                shootDirection = "down";
+            }
+
+            //Exit
+
+            if ( e.KeyCode == Keys.Escape)
             {
                 Application.Exit();
             }
