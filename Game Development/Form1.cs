@@ -17,7 +17,7 @@ namespace Game_Development
         bool gameOver = false;
         bool inShop = false;
         int playerHealth = 100;
-        int playerSpeed = 5;
+        int playerSpeed = 12;
         int zombieSpeed = 3;
         //Declare Lists
         List<PictureBox> zombieList = new List<PictureBox>();
