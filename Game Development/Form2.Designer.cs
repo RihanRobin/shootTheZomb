@@ -31,18 +31,18 @@
             this.components = new System.ComponentModel.Container();
             this.screen = new System.Windows.Forms.Panel();
             this.shop = new System.Windows.Forms.PictureBox();
-            this.playerShop = new System.Windows.Forms.PictureBox();
+            this.player = new System.Windows.Forms.PictureBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.screen.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.shop)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.playerShop)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.player)).BeginInit();
             this.SuspendLayout();
             // 
             // screen
             // 
             this.screen.BackColor = System.Drawing.Color.Black;
             this.screen.Controls.Add(this.shop);
-            this.screen.Controls.Add(this.playerShop);
+            this.screen.Controls.Add(this.player);
             this.screen.Dock = System.Windows.Forms.DockStyle.Fill;
             this.screen.Location = new System.Drawing.Point(0, 0);
             this.screen.Name = "screen";
@@ -58,14 +58,14 @@
             this.shop.TabIndex = 1;
             this.shop.TabStop = false;
             // 
-            // playerShop
+            // player
             // 
-            this.playerShop.BackColor = System.Drawing.Color.White;
-            this.playerShop.Location = new System.Drawing.Point(22, 27);
-            this.playerShop.Name = "playerShop";
-            this.playerShop.Size = new System.Drawing.Size(20, 20);
-            this.playerShop.TabIndex = 0;
-            this.playerShop.TabStop = false;
+            this.player.BackColor = System.Drawing.Color.White;
+            this.player.Location = new System.Drawing.Point(22, 27);
+            this.player.Name = "player";
+            this.player.Size = new System.Drawing.Size(20, 20);
+            this.player.TabIndex = 0;
+            this.player.TabStop = false;
             // 
             // timer1
             // 
@@ -85,7 +85,7 @@
             this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.Form2_KeyUp);
             this.screen.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.shop)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.playerShop)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.player)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -94,7 +94,7 @@
 
         private System.Windows.Forms.Panel screen;
         private System.Windows.Forms.PictureBox shop;
-        private System.Windows.Forms.PictureBox playerShop;
+        private System.Windows.Forms.PictureBox player;
         private System.Windows.Forms.Timer timer1;
     }
 }

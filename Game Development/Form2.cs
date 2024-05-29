@@ -22,23 +22,23 @@ namespace Game_Development
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            if (right == true)
+            if (right == true && player.Left + player.Width < this.ClientSize.Width)
             {
-                playerShop.Left += playerSpeed;
+                player.Left += playerSpeed;
             }
-            if (left == true)
+            if (left == true && player.Left > 0)
             {
-                playerShop.Left -= playerSpeed;
+                player.Left -= playerSpeed;
             }
-            if (up == true)
+            if (up == true && player.Top > 0)
             {
-                playerShop.Top -= playerSpeed;
+                player.Top -= playerSpeed;
             }
-            if (down == true)
+            if (down == true && player.Top + player.Width < this.ClientSize.Height)
             {
-                playerShop.Top += playerSpeed;
+                player.Top += playerSpeed;
             }
-            if (inShop == true && playerShop.Bounds.IntersectsWith(shop.Bounds))
+            if (inShop == true && player.Bounds.IntersectsWith(shop.Bounds))
             {
                 this.Hide();
                 timer1.Stop();
