@@ -36,7 +36,34 @@ namespace Game_Development
 
         private void BulletTimerEvent(object sender, EventArgs e)
         {
+            if (direction == "left")
+            {
+                bullet.Left -= speed;
+            }
 
+            if (direction == "right")
+            {
+                bullet.Left += speed;
+            }
+
+            if (direction == "up")
+            {
+                bullet.Top -= speed;
+            }
+
+            if (direction == "down")
+            {
+                bullet.Top += speed;
+            }
+
+            if (bullet.Left < 16 || bullet.Left > 860 || bullet.Top < 10 || bullet.Top > 616)
+            {
+                bulletTimer.Stop();
+                bulletTimer.Dispose();
+                bullet.Dispose();
+                bulletTimer = null;
+                bullet = null;
+            }
         }
     }
 }

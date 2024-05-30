@@ -123,22 +123,48 @@ namespace Game_Development
 
         private void Form1_KeyUp(object sender, KeyEventArgs e)
         {
-            if (e.KeyCode == Keys.Right || e.KeyCode == Keys.D)
+            if (e.KeyCode == Keys.D)
             {
                 right = false;
             }
-            if (e.KeyCode == Keys.Left || e.KeyCode == Keys.A)
+            if (e.KeyCode == Keys.A)
             {
                 left = false;
             }
-            if (e.KeyCode == Keys.Up || e.KeyCode == Keys.W)
+            if (e.KeyCode == Keys.W)
             {
                 up = false;
             }
-            if (e.KeyCode == Keys.Down || e.KeyCode == Keys.S)
+            if (e.KeyCode == Keys.S)
             {
                 down = false;
             }
+
+            if (e.KeyCode == Keys.Right)
+            {
+                ShootBullet(shootDirection);
+            }
+            if (e.KeyCode == Keys.Left)
+            {
+                ShootBullet(shootDirection);
+            }
+            if (e.KeyCode == Keys.Up)
+            {
+                ShootBullet(shootDirection);
+            }
+            if (e.KeyCode == Keys.Down)
+            {
+                ShootBullet(shootDirection);
+            }
+        }
+
+        private void ShootBullet(string direction)
+        {
+            Bullet shootBullet = new Bullet();
+            shootBullet.direction = direction;
+            shootBullet.bulletLeft = player.Left + (player.Width / 2);
+            shootBullet.bulletTop = player.Top + (player.Height / 2);
+            shootBullet.MakeBullet(this);
         }
     }
 }
