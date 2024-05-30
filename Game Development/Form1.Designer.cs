@@ -53,6 +53,7 @@
             // 
             // healthBar
             // 
+            this.healthBar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.healthBar.Location = new System.Drawing.Point(590, 12);
             this.healthBar.Name = "healthBar";
             this.healthBar.Size = new System.Drawing.Size(198, 23);
@@ -61,6 +62,7 @@
             // 
             // shop
             // 
+            this.shop.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.shop.BackColor = System.Drawing.Color.Lime;
             this.shop.Location = new System.Drawing.Point(723, 430);
             this.shop.Name = "shop";
@@ -70,6 +72,7 @@
             // 
             // player
             // 
+            this.player.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.player.BackColor = System.Drawing.Color.White;
             this.player.Location = new System.Drawing.Point(758, 404);
             this.player.Name = "player";
