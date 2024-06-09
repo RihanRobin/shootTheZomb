@@ -14,13 +14,13 @@ namespace Game_Development
         public int bulletLeft;
         public int bulletTop;
 
-        int speed = 20;
-        PictureBox bullet = new PictureBox();
-        Timer bulletTimer = new Timer();
+        private int speed = 20;
+        private PictureBox bullet = new PictureBox();
+        private Timer bulletTimer = new Timer();
 
         public void MakeBullet(Form form)
         {
-            bullet.BackColor = Color.White;
+            bullet.BackColor = Color.Green;
             bullet.Size = new Size(5,5);
             bullet.Tag = "bullet";
             bullet.Left = bulletLeft;
@@ -29,7 +29,7 @@ namespace Game_Development
 
             form.Controls.Add(bullet);
             
-            bulletTimer.Interval = speed;
+            bulletTimer.Interval = 20;
             bulletTimer.Tick += new EventHandler(BulletTimerEvent);
             bulletTimer.Start();
         }
@@ -56,7 +56,7 @@ namespace Game_Development
                 bullet.Top += speed;
             }
 
-            if (bullet.Left < 16 || bullet.Left > 860 || bullet.Top < 10 || bullet.Top > 616)
+            if (bullet.Left < 0 || bullet.Left > 900 || bullet.Top < 0 || bullet.Top > 700)
             {
                 bulletTimer.Stop();
                 bulletTimer.Dispose();

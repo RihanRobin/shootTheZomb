@@ -20,7 +20,7 @@ namespace Game_Development
         int playerSpeed = 5;
         int zombieSpeed = 3;
         string facing = "up";
-        string shootDirection;
+
         //Declare Lists
         List<PictureBox> zombieList = new List<PictureBox>();
         public FormGame()
@@ -28,7 +28,7 @@ namespace Game_Development
             InitializeComponent();
         }
 
-        private void timer1_Tick(object sender, EventArgs e)
+        private void MainTimerEvent(object sender, EventArgs e)
         {
             if (right == true && player.Left + player.Width < this.ClientSize.Width)
             {
@@ -37,12 +37,12 @@ namespace Game_Development
             if (left == true && player.Left > 0)
             {
                 player.Left -= playerSpeed;
-            }   
+            }
             if (up == true && player.Top > 0)
             {
                 player.Top -= playerSpeed;
             }
-            if (down == true && player.Top + player.Width < this.ClientSize.Height)
+            if (down == true && player.Top + player.Height < this.ClientSize.Height)
             {
                 player.Top += playerSpeed;
             }
@@ -95,27 +95,27 @@ namespace Game_Development
             if (e.KeyCode == Keys.Right)
             {
                 facing = "right";
-                shootDirection = "right";
+                ShootBullet(facing);
             }
             if (e.KeyCode == Keys.Left)
             {
                 facing = "left";
-                shootDirection = "left";
+                ShootBullet(facing);
             }
             if (e.KeyCode == Keys.Up)
             {
                 facing = "up";
-                shootDirection = "up";
+                ShootBullet(facing);
             }
             if (e.KeyCode == Keys.Down)
             {
                 facing = "down";
-                shootDirection = "down";
+                ShootBullet(facing);
             }
 
             //Exit
 
-            if ( e.KeyCode == Keys.Escape)
+            if (e.KeyCode == Keys.Escape)
             {
                 Application.Exit();
             }
@@ -139,31 +139,14 @@ namespace Game_Development
             {
                 down = false;
             }
-
-            if (e.KeyCode == Keys.Right)
-            {
-                ShootBullet(shootDirection);
-            }
-            if (e.KeyCode == Keys.Left)
-            {
-                ShootBullet(shootDirection);
-            }
-            if (e.KeyCode == Keys.Up)
-            {
-                ShootBullet(shootDirection);
-            }
-            if (e.KeyCode == Keys.Down)
-            {
-                ShootBullet(shootDirection);
-            }
         }
 
         private void ShootBullet(string direction)
         {
             Bullet shootBullet = new Bullet();
             shootBullet.direction = direction;
-            shootBullet.bulletLeft = player.Left + (player.Width / 2);
-            shootBullet.bulletTop = player.Top + (player.Height / 2);
+            shootBullet.bulletLeft = player.Left + player.Width / 2;
+            shootBullet.bulletTop = player.Top + player.Height / 2;
             shootBullet.MakeBullet(this);
         }
     }
