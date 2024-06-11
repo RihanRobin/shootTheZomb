@@ -29,7 +29,7 @@ namespace Game_Development
 
             form.Controls.Add(bullet);
             
-            bulletTimer.Interval = 20;
+            bulletTimer.Interval = speed;
             bulletTimer.Tick += new EventHandler(BulletTimerEvent);
             bulletTimer.Start();
         }

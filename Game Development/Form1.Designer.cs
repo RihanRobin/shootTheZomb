@@ -50,6 +50,7 @@
             this.screen.Name = "screen";
             this.screen.Size = new System.Drawing.Size(800, 450);
             this.screen.TabIndex = 0;
+            this.screen.Paint += new System.Windows.Forms.PaintEventHandler(this.FormPaintEvent);
             // 
             // healthBar
             // 

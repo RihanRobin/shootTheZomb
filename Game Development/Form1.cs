@@ -20,12 +20,21 @@ namespace Game_Development
         int playerSpeed = 5;
         int zombieSpeed = 3;
         string facing = "up";
+        Image Player;
+        List<string> playerMovements = new List<string>();
+        int steps = 0;
+        int slowDownFramerate = 0;
+        int playerHeight = 100;
+        int playerWidth = 100;
+        int playerX;
+        int playerY;
 
         //Declare Lists
         List<PictureBox> zombieList = new List<PictureBox>();
         public FormGame()
         {
             InitializeComponent();
+            SetUp();
         }
 
         private void MainTimerEvent(object sender, EventArgs e)
@@ -62,6 +71,20 @@ namespace Game_Development
             {
                 gameOver = true;
             }
+        }
+
+        private void FormPaintEvent(object sender, PaintEventArgs e)
+        {
+          
+        }
+        private void SetUp()
+        {
+
+        }
+
+        private void AnimatePlayer(int start, int end)
+        {
+
         }
 
         private void Form1_KeyDown(object sender, KeyEventArgs e)
