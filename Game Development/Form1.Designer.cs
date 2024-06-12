@@ -74,10 +74,12 @@
             // player
             // 
             this.player.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.player.BackColor = System.Drawing.Color.White;
-            this.player.Location = new System.Drawing.Point(758, 404);
+            this.player.BackColor = System.Drawing.Color.Transparent;
+            this.player.Image = global::Game_Development.Properties.Resources.SorceressUpWalk_5;
+            this.player.Location = new System.Drawing.Point(756, 387);
             this.player.Name = "player";
-            this.player.Size = new System.Drawing.Size(20, 20);
+            this.player.Size = new System.Drawing.Size(32, 37);
+            this.player.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.player.TabIndex = 0;
             this.player.TabStop = false;
             // 

@@ -81,6 +81,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="StartScreen.resx">
       <DependentUpon>StartScreen.cs</DependentUpon>
@@ -97,6 +98,78 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Player\Walk\Down\SorceressDownWalk_0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Player\Walk\Down\SorceressDownWalk_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Player\Walk\Down\SorceressDownWalk_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Player\Walk\Down\SorceressDownWalk_3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Player\Walk\Down\SorceressDownWalk_4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Player\Walk\Down\SorceressDownWalk_5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Player\Walk\Left\SorceressLeftWalk_0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Player\Walk\Left\SorceressLeftWalk_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Player\Walk\Left\SorceressLeftWalk_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Player\Walk\Left\SorceressLeftWalk_3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Player\Walk\Left\SorceressLeftWalk_4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Player\Walk\Left\SorceressLeftWalk_5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Player\Walk\Right\SorceressRightWalk_0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Player\Walk\Right\SorceressRightWalk_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Player\Walk\Right\SorceressRightWalk_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Player\Walk\Right\SorceressRightWalk_3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Player\Walk\Right\SorceressRightWalk_4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Player\Walk\Right\SorceressRightWalk_5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Player\Walk\Up\SorceressUpWalk_0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Player\Walk\Up\SorceressUpWalk_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Player\Walk\Up\SorceressUpWalk_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Player\Walk\Up\SorceressUpWalk_3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Player\Walk\Up\SorceressUpWalk_4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Player\Walk\Up\SorceressUpWalk_5.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

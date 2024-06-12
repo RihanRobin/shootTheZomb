@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace Game_Development
 {
@@ -75,7 +76,7 @@ namespace Game_Development
 
         private void FormPaintEvent(object sender, PaintEventArgs e)
         {
-          
+            Graphics Canvas = e.Graphics;
         }
         private void SetUp()
         {
@@ -95,22 +96,26 @@ namespace Game_Development
             {
                 right = true;
                 facing = "right";
+                player.Image = Properties.Resources.SorceressRightWalk_0;
 
             }
             if (e.KeyCode == Keys.A)
             {
                 left = true;
                 facing = "left";
+                player.Image = Properties.Resources.SorceressLeftWalk_0;
             }
             if (e.KeyCode == Keys.W)
             {
                 up = true;
                 facing = "up";
+                player.Image = Properties.Resources.SorceressUpWalk_0;
             }
             if (e.KeyCode == Keys.S)
             {
                 down = true;
                 facing = "down";
+                player.Image = Properties.Resources.SorceressDownWalk_0;
             }
 
             //Bullet Movement
