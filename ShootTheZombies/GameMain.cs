@@ -25,7 +25,7 @@ namespace ShootTheZombies
         int playerY = 430;
         int playerHeight = 68;
         int playerWidth = 37;
-        int playerSpeed = 10;
+        int playerSpeed = 8;
         string facing;
         Rectangle playerBounds;  // Player collision bounds
 
@@ -86,6 +86,7 @@ namespace ShootTheZombies
             CheckCollisionWithShop();
             UpdateHealthBar();
             this.Invalidate();
+            
         }
 
         private void SetUp()
@@ -101,8 +102,8 @@ namespace ShootTheZombies
 
         private void AnimatePlayer(int start, int end)
         {
-            slowDownFrameRate++;
-            if (slowDownFrameRate == 4)
+            slowDownFrameRate ++;
+            if (slowDownFrameRate == 3)
             {
                 frameIndex++;
                 slowDownFrameRate = 0;
@@ -117,27 +118,40 @@ namespace ShootTheZombies
             if (goLeft && playerX > 0)
             {
                 playerX -= playerSpeed;
-                facing = "left";
                 AnimatePlayer(6, 11);
             }
             else if (goRight && playerX + playerWidth < this.ClientSize.Width)
             {
                 playerX += playerSpeed;
-                facing = "right";
                 AnimatePlayer(12, 17);
             }
             else if (goUp && playerY > 0)
             {
                 playerY -= playerSpeed;
-                facing = "up";
                 AnimatePlayer(18, 23);
             }
             else if (goDown && playerY + playerHeight < this.ClientSize.Height)
             {
                 playerY += playerSpeed;
-                facing = "down";
                 AnimatePlayer(0, 5);
             }
+            else if(facing == "left")
+            {
+                playerImage = Image.FromFile(playerMovements[6]);
+            }
+            else if (facing == "right")
+            {
+                playerImage = Image.FromFile(playerMovements[12]);
+            }
+            else if (facing == "up")
+            {
+                playerImage = Image.FromFile(playerMovements[18]);
+            }
+            else if (facing == "down")
+            {
+                playerImage = Image.FromFile(playerMovements[0]);
+            }
+
             else
             {
                 AnimatePlayer(0, 0);
@@ -176,6 +190,15 @@ namespace ShootTheZombies
             shootBullet.bulletLeft = playerX + playerWidth / 2;
             shootBullet.bulletTop = playerY + playerWidth / 2;
             shootBullet.MakeBullet(this);
+
+            if (direction == "left")
+            {
+                playerImage = Image.FromFile(playerMovements[9]);
+            }
+            else
+            {
+                AnimatePlayer(4,4);
+            }
         }
     }
 }

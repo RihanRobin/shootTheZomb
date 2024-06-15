@@ -28,7 +28,7 @@ namespace ShootTheZombies
         int playerY = 75;
         int playerHeight = 68;
         int playerWidth = 37;
-        int playerSpeed = 10;
+        int playerSpeed = 8;
         string facing;
         Rectangle playerBounds;  // Player collision bounds
         private void KeyIsDown(object sender, KeyEventArgs e)
@@ -78,7 +78,7 @@ namespace ShootTheZombies
         private void AnimatePlayer(int start, int end)
         {
             slowDownFrameRate++;
-            if (slowDownFrameRate == 4)
+            if (slowDownFrameRate == 3)
             {
                 frameIndex++;
                 slowDownFrameRate = 0;

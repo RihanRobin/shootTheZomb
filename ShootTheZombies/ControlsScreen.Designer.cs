@@ -56,7 +56,7 @@
             Controls.Add(panel1);
             Name = "ControlsScreen";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "ControlsScreen";
+            Text = "Controls";
             ResumeLayout(false);
         }
 

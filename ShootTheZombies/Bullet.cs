@@ -21,7 +21,8 @@ namespace Game_Development
 
         public void MakeBullet(Form form)
         {
-            bullet.BackColor = Color.Green;
+            bullet.BackColor = Color.OrangeRed;
+            bullet.Image = Image.FromFile("fireball.png");
             bullet.Size = new Size(5, 5);
             bullet.Tag = "bullet";
             bullet.Left = bulletLeft;

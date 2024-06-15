@@ -59,7 +59,7 @@
             Controls.Add(door);
             Name = "GameShop";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "GameShop";
+            Text = "Shoot The Zombies";
             Paint += FormPaintEvent;
             KeyDown += KeyIsDown;
             KeyUp += KeyIsUp;

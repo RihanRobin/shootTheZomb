@@ -69,7 +69,7 @@
             Controls.Add(healthBar);
             Name = "GameMain";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "GameMain";
+            Text = "Shoot The Zombies";
             Paint += FormPaintEvent;
             KeyDown += KeyIsDown;
             KeyUp += KeyIsUp;
