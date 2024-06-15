@@ -26,7 +26,7 @@ namespace ShootTheZombies
         int playerHeight = 68;
         int playerWidth = 37;
         int playerSpeed = 8;
-        string facing;
+        string shootDirection;
         Rectangle playerBounds;  // Player collision bounds
 
         public GameMain()
@@ -44,23 +44,23 @@ namespace ShootTheZombies
 
             if (e.KeyCode == Keys.Right)
             {
-                facing = "right";
-                ShootBullet(facing);
+                shootDirection = "right";
+                ShootBullet(shootDirection);
             }
             if (e.KeyCode == Keys.Left)
             {
-                facing = "left";
-                ShootBullet(facing);
+                shootDirection = "left";
+                ShootBullet(shootDirection);
             }
             if (e.KeyCode == Keys.Up)
             {
-                facing = "up";
-                ShootBullet(facing);
+                shootDirection = "up";
+                ShootBullet(shootDirection);
             }
             if (e.KeyCode == Keys.Down)
             {
-                facing = "down";
-                ShootBullet(facing);
+                shootDirection = "down";
+                ShootBullet(shootDirection);
             }
 
             if (e.KeyCode == Keys.Escape) Application.Exit();
@@ -118,43 +118,46 @@ namespace ShootTheZombies
             if (goLeft && playerX > 0)
             {
                 playerX -= playerSpeed;
+                shootDirection = "none";
                 AnimatePlayer(6, 11);
             }
             else if (goRight && playerX + playerWidth < this.ClientSize.Width)
             {
                 playerX += playerSpeed;
+                shootDirection = "none";
                 AnimatePlayer(12, 17);
             }
             else if (goUp && playerY > 0)
             {
                 playerY -= playerSpeed;
+                shootDirection = "none";
                 AnimatePlayer(18, 23);
             }
             else if (goDown && playerY + playerHeight < this.ClientSize.Height)
             {
                 playerY += playerSpeed;
+                shootDirection = "none";
                 AnimatePlayer(0, 5);
             }
-            else if(facing == "left")
+            else if(shootDirection == "left")
             {
                 playerImage = Image.FromFile(playerMovements[6]);
             }
-            else if (facing == "right")
+            else if (shootDirection == "right")
             {
                 playerImage = Image.FromFile(playerMovements[12]);
             }
-            else if (facing == "up")
+            else if (shootDirection == "up")
             {
                 playerImage = Image.FromFile(playerMovements[18]);
             }
-            else if (facing == "down")
+            else if (shootDirection == "down")
             {
                 playerImage = Image.FromFile(playerMovements[0]);
             }
-
             else
             {
-                AnimatePlayer(0, 0);
+                AnimatePlayer(18, 0);
             }
 
             playerBounds.X = playerX;
