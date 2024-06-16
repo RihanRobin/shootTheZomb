@@ -86,7 +86,7 @@ namespace ShootTheZombies
             CheckCollisionWithShop();
             UpdateHealthBar();
             this.Invalidate();
-            
+
         }
 
         private void SetUp()
@@ -102,7 +102,7 @@ namespace ShootTheZombies
 
         private void AnimatePlayer(int start, int end)
         {
-            slowDownFrameRate ++;
+            slowDownFrameRate++;
             if (slowDownFrameRate == 3)
             {
                 frameIndex++;
@@ -139,7 +139,7 @@ namespace ShootTheZombies
                 shootDirection = "none";
                 AnimatePlayer(0, 5);
             }
-            else if(shootDirection == "left")
+            else if (shootDirection == "left")
             {
                 playerImage = Image.FromFile(playerMovements[6]);
             }
@@ -200,7 +200,7 @@ namespace ShootTheZombies
             }
             else
             {
-                AnimatePlayer(4,4);
+                AnimatePlayer(4, 4);
             }
         }
     }
