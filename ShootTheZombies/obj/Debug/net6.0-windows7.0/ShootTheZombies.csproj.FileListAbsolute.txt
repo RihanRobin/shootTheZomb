@@ -1,0 +1,42 @@
+C:\Projects\c#\ShootTheZombies\ShootTheZombies\bin\Debug\net6.0-windows7.0\ShootTheZombies.exe
+C:\Projects\c#\ShootTheZombies\ShootTheZombies\bin\Debug\net6.0-windows7.0\ShootTheZombies.deps.json
+C:\Projects\c#\ShootTheZombies\ShootTheZombies\bin\Debug\net6.0-windows7.0\ShootTheZombies.runtimeconfig.json
+C:\Projects\c#\ShootTheZombies\ShootTheZombies\bin\Debug\net6.0-windows7.0\ShootTheZombies.dll
+C:\Projects\c#\ShootTheZombies\ShootTheZombies\bin\Debug\net6.0-windows7.0\ShootTheZombies.pdb
+C:\Projects\c#\ShootTheZombies\ShootTheZombies\obj\Debug\net6.0-windows7.0\ShootTheZombies.ControlsScreen.resources
+C:\Projects\c#\ShootTheZombies\ShootTheZombies\obj\Debug\net6.0-windows7.0\ShootTheZombies.StartScreen.resources
+C:\Projects\c#\ShootTheZombies\ShootTheZombies\obj\Debug\net6.0-windows7.0\ShootTheZombies.GameMain.resources
+C:\Projects\c#\ShootTheZombies\ShootTheZombies\obj\Debug\net6.0-windows7.0\ShootTheZombies.GameShop.resources
+C:\Projects\c#\ShootTheZombies\ShootTheZombies\obj\Debug\net6.0-windows7.0\ShootTheZombies.Properties.Resources.resources
+C:\Projects\c#\ShootTheZombies\ShootTheZombies\obj\Debug\net6.0-windows7.0\ShootTheZombies.csproj.GenerateResource.cache
+C:\Projects\c#\ShootTheZombies\ShootTheZombies\obj\Debug\net6.0-windows7.0\ShootTheZombies.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projects\c#\ShootTheZombies\ShootTheZombies\obj\Debug\net6.0-windows7.0\ShootTheZombies.AssemblyInfoInputs.cache
+C:\Projects\c#\ShootTheZombies\ShootTheZombies\obj\Debug\net6.0-windows7.0\ShootTheZombies.AssemblyInfo.cs
+C:\Projects\c#\ShootTheZombies\ShootTheZombies\obj\Debug\net6.0-windows7.0\ShootTheZombies.csproj.CoreCompileInputs.cache
+C:\Projects\c#\ShootTheZombies\ShootTheZombies\obj\Debug\net6.0-windows7.0\ShootTheZombies.sourcelink.json
+C:\Projects\c#\ShootTheZombies\ShootTheZombies\obj\Debug\net6.0-windows7.0\ShootTheZombies.dll
+C:\Projects\c#\ShootTheZombies\ShootTheZombies\obj\Debug\net6.0-windows7.0\refint\ShootTheZombies.dll
+C:\Projects\c#\ShootTheZombies\ShootTheZombies\obj\Debug\net6.0-windows7.0\ShootTheZombies.pdb
+C:\Projects\c#\ShootTheZombies\ShootTheZombies\obj\Debug\net6.0-windows7.0\ShootTheZombies.genruntimeconfig.cache
+C:\Projects\c#\ShootTheZombies\ShootTheZombies\obj\Debug\net6.0-windows7.0\ref\ShootTheZombies.dll
+C:\Projects\c#\ShootTheZombies - Copy\ShootTheZombies\bin\Debug\net6.0-windows7.0\ShootTheZombies.exe
+C:\Projects\c#\ShootTheZombies - Copy\ShootTheZombies\bin\Debug\net6.0-windows7.0\ShootTheZombies.deps.json
+C:\Projects\c#\ShootTheZombies - Copy\ShootTheZombies\bin\Debug\net6.0-windows7.0\ShootTheZombies.runtimeconfig.json
+C:\Projects\c#\ShootTheZombies - Copy\ShootTheZombies\bin\Debug\net6.0-windows7.0\ShootTheZombies.dll
+C:\Projects\c#\ShootTheZombies - Copy\ShootTheZombies\bin\Debug\net6.0-windows7.0\ShootTheZombies.pdb
+C:\Projects\c#\ShootTheZombies - Copy\ShootTheZombies\obj\Debug\net6.0-windows7.0\ShootTheZombies.ControlsScreen.resources
+C:\Projects\c#\ShootTheZombies - Copy\ShootTheZombies\obj\Debug\net6.0-windows7.0\ShootTheZombies.StartScreen.resources
+C:\Projects\c#\ShootTheZombies - Copy\ShootTheZombies\obj\Debug\net6.0-windows7.0\ShootTheZombies.GameMain.resources
+C:\Projects\c#\ShootTheZombies - Copy\ShootTheZombies\obj\Debug\net6.0-windows7.0\ShootTheZombies.GameShop.resources
+C:\Projects\c#\ShootTheZombies - Copy\ShootTheZombies\obj\Debug\net6.0-windows7.0\ShootTheZombies.Properties.Resources.resources
+C:\Projects\c#\ShootTheZombies - Copy\ShootTheZombies\obj\Debug\net6.0-windows7.0\ShootTheZombies.csproj.GenerateResource.cache
+C:\Projects\c#\ShootTheZombies - Copy\ShootTheZombies\obj\Debug\net6.0-windows7.0\ShootTheZombies.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projects\c#\ShootTheZombies - Copy\ShootTheZombies\obj\Debug\net6.0-windows7.0\ShootTheZombies.AssemblyInfoInputs.cache
+C:\Projects\c#\ShootTheZombies - Copy\ShootTheZombies\obj\Debug\net6.0-windows7.0\ShootTheZombies.AssemblyInfo.cs
+C:\Projects\c#\ShootTheZombies - Copy\ShootTheZombies\obj\Debug\net6.0-windows7.0\ShootTheZombies.csproj.CoreCompileInputs.cache
+C:\Projects\c#\ShootTheZombies - Copy\ShootTheZombies\obj\Debug\net6.0-windows7.0\ShootTheZombies.sourcelink.json
+C:\Projects\c#\ShootTheZombies - Copy\ShootTheZombies\obj\Debug\net6.0-windows7.0\ShootTheZombies.dll
+C:\Projects\c#\ShootTheZombies - Copy\ShootTheZombies\obj\Debug\net6.0-windows7.0\refint\ShootTheZombies.dll
+C:\Projects\c#\ShootTheZombies - Copy\ShootTheZombies\obj\Debug\net6.0-windows7.0\ShootTheZombies.pdb
+C:\Projects\c#\ShootTheZombies - Copy\ShootTheZombies\obj\Debug\net6.0-windows7.0\ShootTheZombies.genruntimeconfig.cache
+C:\Projects\c#\ShootTheZombies - Copy\ShootTheZombies\obj\Debug\net6.0-windows7.0\ref\ShootTheZombies.dll

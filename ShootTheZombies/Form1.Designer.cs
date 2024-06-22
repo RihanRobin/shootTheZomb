@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(StartScreen));
             panel1 = new Panel();
             button2 = new Button();
             button1 = new Button();
@@ -44,16 +45,18 @@
             panel1.Controls.Add(pictureBox1);
             panel1.Dock = DockStyle.Fill;
             panel1.Location = new Point(0, 0);
+            panel1.Margin = new Padding(3, 4, 3, 4);
             panel1.Name = "panel1";
-            panel1.Size = new Size(828, 501);
+            panel1.Size = new Size(946, 668);
             panel1.TabIndex = 0;
             // 
             // button2
             // 
             button2.Anchor = AnchorStyles.Bottom;
-            button2.Location = new Point(369, 396);
+            button2.Location = new Point(422, 528);
+            button2.Margin = new Padding(3, 4, 3, 4);
             button2.Name = "button2";
-            button2.Size = new Size(90, 32);
+            button2.Size = new Size(103, 43);
             button2.TabIndex = 2;
             button2.Text = "Exit";
             button2.UseVisualStyleBackColor = true;
@@ -62,9 +65,10 @@
             // button1
             // 
             button1.Anchor = AnchorStyles.Bottom;
-            button1.Location = new Point(368, 354);
+            button1.Location = new Point(421, 472);
+            button1.Margin = new Padding(3, 4, 3, 4);
             button1.Name = "button1";
-            button1.Size = new Size(90, 37);
+            button1.Size = new Size(103, 49);
             button1.TabIndex = 1;
             button1.Text = "Play";
             button1.UseVisualStyleBackColor = true;
@@ -73,20 +77,22 @@
             // pictureBox1
             // 
             pictureBox1.Anchor = AnchorStyles.Top;
-            pictureBox1.Image = Properties.Resources.Logo;
-            pictureBox1.Location = new Point(164, 23);
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(187, 31);
+            pictureBox1.Margin = new Padding(3, 4, 3, 4);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(500, 317);
+            pictureBox1.Size = new Size(571, 423);
             pictureBox1.SizeMode = PictureBoxSizeMode.CenterImage;
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
             // 
             // StartScreen
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(828, 501);
+            ClientSize = new Size(946, 668);
             Controls.Add(panel1);
+            Margin = new Padding(3, 4, 3, 4);
             Name = "StartScreen";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Shoot The Zombies";

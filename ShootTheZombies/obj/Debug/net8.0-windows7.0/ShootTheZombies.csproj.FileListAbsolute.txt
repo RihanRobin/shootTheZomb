@@ -1,0 +1,5 @@
+C:\Projects\c#\ShootTheZombies\ShootTheZombies\obj\Debug\net8.0-windows7.0\ShootTheZombies.ControlsScreen.resources
+C:\Projects\c#\ShootTheZombies\ShootTheZombies\obj\Debug\net8.0-windows7.0\ShootTheZombies.StartScreen.resources
+C:\Projects\c#\ShootTheZombies\ShootTheZombies\obj\Debug\net8.0-windows7.0\ShootTheZombies.GameMain.resources
+C:\Projects\c#\ShootTheZombies\ShootTheZombies\obj\Debug\net8.0-windows7.0\ShootTheZombies.GameShop.resources
+C:\Projects\c#\ShootTheZombies\ShootTheZombies\obj\Debug\net8.0-windows7.0\ShootTheZombies.csproj.GenerateResource.cache
