@@ -26,7 +26,7 @@ namespace ShootTheZombies
         int playerHeight = 68;
         int playerWidth = 37;
         int playerSpeed = 8;
-        int ammo = 5;
+        int ammo = 10;
         Random rnd = new Random();
         string shootDirection;
         Rectangle playerBounds;  // Player collision bounds
@@ -108,6 +108,22 @@ namespace ShootTheZombies
             CheckCollisionWithShop();
             UpdateHealthBar();
             this.Invalidate();
+            foreach (Control x in this.Controls)
+            {
+                // if the X is a picture box and X has a tag AMMO
+                if (x is PictureBox && x.Tag == "ammo")
+                {
+                    // check is X in hitting the player picture box
+                    if (((PictureBox)x).Bounds.IntersectsWith(playerBounds))
+                    {
+                        // once the player picks up the ammo
+                        this.Controls.Remove(((PictureBox)x)); // remove the ammo picture box
+                        ((PictureBox)x).Dispose(); // dispose the picture box completely from the program
+                        ammo += 10; // add 5 ammo to the integer
+                    }
+                }
+
+            }
 
         }
 
