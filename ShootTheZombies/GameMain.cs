@@ -26,6 +26,8 @@ namespace ShootTheZombies
         int playerHeight = 68;
         int playerWidth = 37;
         int playerSpeed = 8;
+        int ammo = 5;
+        Random rnd = new Random();
         string shootDirection;
         Rectangle playerBounds;  // Player collision bounds
 
@@ -42,25 +44,45 @@ namespace ShootTheZombies
             if (e.KeyCode == Keys.W) goUp = true;
             if (e.KeyCode == Keys.S) goDown = true;
 
-            if (e.KeyCode == Keys.Right)
+            if (e.KeyCode == Keys.Right && ammo > 0)
             {
                 shootDirection = "right";
+                ammo--;
                 ShootBullet(shootDirection);
+                if (ammo < 1) // if ammo is less than 1
+                {
+                    DropAmmo(); // invoke the drop ammo function
+                }
             }
-            if (e.KeyCode == Keys.Left)
+            if (e.KeyCode == Keys.Left && ammo > 0)
             {
                 shootDirection = "left";
+                ammo--;
                 ShootBullet(shootDirection);
+                if (ammo < 1) // if ammo is less than 1
+                {
+                    DropAmmo(); // invoke the drop ammo function
+                }
             }
-            if (e.KeyCode == Keys.Up)
+            if (e.KeyCode == Keys.Up && ammo > 0)
             {
                 shootDirection = "up";
+                ammo--;
                 ShootBullet(shootDirection);
+                if (ammo < 1) // if ammo is less than 1
+                {
+                    DropAmmo(); // invoke the drop ammo function
+                }
             }
-            if (e.KeyCode == Keys.Down)
+            if (e.KeyCode == Keys.Down && ammo > 0)
             {
                 shootDirection = "down";
+                ammo--;
                 ShootBullet(shootDirection);
+                if (ammo < 1) // if ammo is less than 1
+                {
+                    DropAmmo(); // invoke the drop ammo function
+                }
             }
 
             if (e.KeyCode == Keys.Escape) Application.Exit();
@@ -103,7 +125,7 @@ namespace ShootTheZombies
         private void AnimatePlayer(int start, int end)
         {
             slowDownFrameRate++;
-            if (slowDownFrameRate == 3)
+            if (slowDownFrameRate == 4)
             {
                 frameIndex++;
                 slowDownFrameRate = 0;
@@ -192,16 +214,19 @@ namespace ShootTheZombies
             shootBullet.direction = direction;
             shootBullet.bulletLeft = playerX + playerWidth / 2;
             shootBullet.bulletTop = playerY + playerWidth / 2;
-            shootBullet.MakeBullet(this);
-
-            if (direction == "left")
-            {
-                playerImage = Image.FromFile(playerMovements[9]);
-            }
-            else
-            {
-                AnimatePlayer(4, 4);
-            }
+            shootBullet.MakeBullet(this); 
+        }
+        private void DropAmmo()
+        {
+            // this function will make a ammo image for this game
+            PictureBox ammo = new PictureBox(); // create a new instance of the picture box
+            ammo.Image = Image.FromFile("fireball.png"); // assignment the ammo image to the picture box
+            ammo.SizeMode = PictureBoxSizeMode.AutoSize; // set the size to auto size
+            ammo.Left = rnd.Next(10, 890); // set the location to a random left
+            ammo.Top = rnd.Next(50, 600); // set the location to a random top
+            ammo.Tag = "ammo"; // set the tag to ammo
+            this.Controls.Add(ammo); // add the ammo picture box to the screen
+            ammo.BringToFront(); // bring it to front
         }
     }
 }
