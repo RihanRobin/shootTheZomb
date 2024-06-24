@@ -119,7 +119,7 @@ namespace ShootTheZombies
                         // once the player picks up the ammo
                         this.Controls.Remove(((PictureBox)x)); // remove the ammo picture box
                         ((PictureBox)x).Dispose(); // dispose the picture box completely from the program
-                        ammo += 10; // add 5 ammo to the integer
+                        ammo += 5; // add 5 ammo to the integer
                     }
                 }
 
