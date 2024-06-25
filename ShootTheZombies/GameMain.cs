@@ -35,6 +35,7 @@ namespace ShootTheZombies
         {
             InitializeComponent();
             SetUp();
+
         }
 
         private void KeyIsDown(object sender, KeyEventArgs e)
@@ -102,6 +103,19 @@ namespace ShootTheZombies
             Canvas.DrawImage(playerImage, playerX, playerY, playerWidth, playerHeight);
         }
 
+        private void makeZombies()
+        {
+            // when this function is called it will make zombies in the game
+            PictureBox zombie = new PictureBox(); // create a new picture box called zombie
+            zombie.Tag = "zombie"; // add a tag to it called zombie
+            zombie.Image = Image.FromFile("fireball.png"); // the default picture for the zombie is zdown
+            zombie.Left = rnd.Next(0, 900); // generate a number between 0 and 900 and assignment that to the new zombies left 
+            zombie.Top = rnd.Next(0, 800); // generate a number between 0 and 800 and assignment that to the new zombies top
+            zombie.SizeMode = PictureBoxSizeMode.AutoSize; // set auto size for the new picture box
+            this.Controls.Add(zombie); // add the picture box to the screen
+            
+        }
+
         private void TimerEvent(object sender, EventArgs e)
         {
             UpdatePlayerMovement();
@@ -149,6 +163,7 @@ namespace ShootTheZombies
 
             if (frameIndex > end || frameIndex < start) frameIndex = start;
             playerImage = Image.FromFile(playerMovements[frameIndex]);
+
         }
 
         private void UpdatePlayerMovement()
@@ -236,10 +251,10 @@ namespace ShootTheZombies
         {
             // this function will make a ammo image for this game
             PictureBox ammo = new PictureBox(); // create a new instance of the picture box
-            ammo.Image = Image.FromFile("fireball.png"); // assignment the ammo image to the picture box
+            ammo.Image = Image.FromFile("fireammo2.png"); // assignment the ammo image to the picture box
             ammo.SizeMode = PictureBoxSizeMode.AutoSize; // set the size to auto size
-            ammo.Left = rnd.Next(10, 890); // set the location to a random left
-            ammo.Top = rnd.Next(50, 600); // set the location to a random top
+            ammo.Left = rnd.Next(10, 800); // set the location to a random left
+            ammo.Top = rnd.Next(50, 500); // set the location to a random top
             ammo.Tag = "ammo"; // set the tag to ammo
             this.Controls.Add(ammo); // add the ammo picture box to the screen
             ammo.BringToFront(); // bring it to front
