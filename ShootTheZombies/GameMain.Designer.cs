@@ -44,7 +44,6 @@
             // 
             // healthBar
             // 
-            healthBar.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             healthBar.Location = new Point(76, 13);
             healthBar.Margin = new Padding(3, 4, 3, 4);
             healthBar.Name = "healthBar";
@@ -67,7 +66,7 @@
             textBox1.BackColor = Color.Black;
             textBox1.BorderStyle = BorderStyle.None;
             textBox1.Enabled = false;
-            textBox1.Font = new Font("Helvetica", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            textBox1.Font = new Font("Helvetica", 9F, FontStyle.Bold, GraphicsUnit.Point);
             textBox1.ForeColor = Color.White;
             textBox1.Location = new Point(12, 21);
             textBox1.Name = "textBox1";
