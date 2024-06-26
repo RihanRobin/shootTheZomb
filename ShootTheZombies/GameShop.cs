@@ -24,8 +24,8 @@ namespace ShootTheZombies
         int slowDownFrameRate = 0;
         bool goLeft, goRight, goUp, goDown;
         bool inShop = true;
-        int playerX = 75;
-        int playerY = 75;
+        int playerX = 45;
+        int playerY = 25;
         int playerHeight = 68;
         int playerWidth = 37;
         int playerSpeed = 8;

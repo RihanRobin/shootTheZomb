@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ShootTheZombies")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+58bcbc1cc90b2736eb5a129d78e972b932f37f9d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
 [assembly: System.Reflection.AssemblyProductAttribute("ShootTheZombies")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ShootTheZombies")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

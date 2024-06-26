@@ -12,6 +12,7 @@ namespace ShootTheZombies
     {
         Image playerImage;
         List<string> playerMovements = new List<string>();
+        List<string> zombieMovements = new List<string>();
         List<string> playerAttack = new List<string>();
         List<string> playerHurt = new List<string>();
         List<string> playerDeath = new List<string>();
@@ -21,12 +22,13 @@ namespace ShootTheZombies
         bool gameOver = false;
         bool inShop = false;
         int playerHealth = 100;
-        int playerX = 875;
-        int playerY = 430;
+        int playerX = 915;
+        int playerY = 465;
         int playerHeight = 68;
         int playerWidth = 37;
         int playerSpeed = 8;
         int ammo = 10;
+        int score = 0;
         Random rnd = new Random();
         string shootDirection;
         Rectangle playerBounds;  // Player collision bounds
@@ -35,6 +37,11 @@ namespace ShootTheZombies
         {
             InitializeComponent();
             SetUp();
+            for (int i = 0; i < 10; i++)
+            {
+                MakeZombies();
+            }
+            
 
         }
 
@@ -103,16 +110,17 @@ namespace ShootTheZombies
             Canvas.DrawImage(playerImage, playerX, playerY, playerWidth, playerHeight);
         }
 
-        private void makeZombies()
+        private void MakeZombies()
         {
             // when this function is called it will make zombies in the game
             PictureBox zombie = new PictureBox(); // create a new picture box called zombie
             zombie.Tag = "zombie"; // add a tag to it called zombie
-            zombie.Image = Image.FromFile("fireball.png"); // the default picture for the zombie is zdown
-            zombie.Left = rnd.Next(0, 900); // generate a number between 0 and 900 and assignment that to the new zombies left 
-            zombie.Top = rnd.Next(0, 800); // generate a number between 0 and 800 and assignment that to the new zombies top
+            zombie.Image = Image.FromFile(zombieMovements[1]); // the default picture for the zombie is zdown
+            zombie.Left = rnd.Next(10, 800); // generate a number between 0 and 900 and assignment that to the new zombies left 
+            zombie.Top = rnd.Next(50, 500); // generate a number between 0 and 800 and assignment that to the new zombies top
             zombie.SizeMode = PictureBoxSizeMode.AutoSize; // set auto size for the new picture box
             this.Controls.Add(zombie); // add the picture box to the screen
+            zombie.SendToBack();
             
         }
 
@@ -149,6 +157,8 @@ namespace ShootTheZombies
             playerAttack = Directory.GetFiles("attack", "*.png").ToList();
             playerHurt = Directory.GetFiles("hurt", "*.png").ToList();
             playerDeath = Directory.GetFiles("death", "*.png").ToList();
+            zombieMovements = Directory.GetFiles("zwalk", "*.png").ToList();
+
             playerBounds = new Rectangle(playerX, playerY, playerWidth, playerHeight);
         }
 
