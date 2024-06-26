@@ -120,8 +120,8 @@ namespace ShootTheZombies
             zombie.Top = rnd.Next(50, 500); // generate a number between 0 and 800 and assignment that to the new zombies top
             zombie.SizeMode = PictureBoxSizeMode.AutoSize; // set auto size for the new picture box
             this.Controls.Add(zombie); // add the picture box to the screen
-            zombie.SendToBack();
-            
+            zombie.BackColor = Color.Transparent;
+
         }
 
         private void TimerEvent(object sender, EventArgs e)
@@ -267,7 +267,7 @@ namespace ShootTheZombies
             ammo.Top = rnd.Next(50, 500); // set the location to a random top
             ammo.Tag = "ammo"; // set the tag to ammo
             this.Controls.Add(ammo); // add the ammo picture box to the screen
-            ammo.BringToFront(); // bring it to front
+            ammo.BackColor = Color.Transparent; // bring it to front
         }
     }
 }
