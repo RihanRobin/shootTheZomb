@@ -13,7 +13,6 @@ namespace ShootTheZombies
         Image playerImage;
         List<string> playerMovements = new List<string>();
         List<string> zombieMovements = new List<string>();
-        List<string> playerAttack = new List<string>();
         List<string> playerHurt = new List<string>();
         List<string> playerDeath = new List<string>();
         int frameIndex = 0;
@@ -154,7 +153,6 @@ namespace ShootTheZombies
             this.DoubleBuffered = true;
             playerMovements = Directory.GetFiles("walk", "*.png").ToList();
             playerImage = Image.FromFile(playerMovements[0]);
-            playerAttack = Directory.GetFiles("attack", "*.png").ToList();
             playerHurt = Directory.GetFiles("hurt", "*.png").ToList();
             playerDeath = Directory.GetFiles("death", "*.png").ToList();
             zombieMovements = Directory.GetFiles("zwalk", "*.png").ToList();

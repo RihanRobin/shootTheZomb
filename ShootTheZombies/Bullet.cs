@@ -28,6 +28,7 @@ namespace Game_Development
             bullet.Left = bulletLeft;
             bullet.Top = bulletTop;
             bullet.BringToFront();
+            bullet.BackColor = Color.Transparent;
 
             form.Controls.Add(bullet);
 
