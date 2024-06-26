@@ -133,8 +133,8 @@ namespace ShootTheZombies
                         break;
                     }
                 }
-            }
-
+            } 
+            
             while (overlap);
 
             zombieFrameIndices[zombie] = 0;
@@ -338,11 +338,11 @@ namespace ShootTheZombies
 
         private void ResolveZombieOverlap(PictureBox zombie1, PictureBox zombie2)
         {
-            if (zombie1.Left < zombie2.Left) zombie1.Left -= 10;
-            else zombie1.Left += 10;
+            if (zombie1.Left < zombie2.Left) zombie1.Left -= 5;
+            else zombie1.Left += 5;
 
-            if (zombie1.Top < zombie2.Top) zombie1.Top -= 10;
-            else zombie1.Top += 10;
+            if (zombie1.Top < zombie2.Top) zombie1.Top -= 5;
+            else zombie1.Top += 5;
         }
 
         private void ShootBullet(string direction)
