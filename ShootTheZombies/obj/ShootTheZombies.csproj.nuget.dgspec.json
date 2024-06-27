@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Projects\\c#\\aaaaaaaaa\\ShootTheZombies\\ShootTheZombies.csproj": {}
+    "K:\\2024_SR_12IT1\\AS91897 - Game\\realyreally new\\ShootTheZombies\\ShootTheZombies.csproj": {}
   },
   "projects": {
-    "C:\\Projects\\c#\\aaaaaaaaa\\ShootTheZombies\\ShootTheZombies.csproj": {
+    "K:\\2024_SR_12IT1\\AS91897 - Game\\realyreally new\\ShootTheZombies\\ShootTheZombies.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Projects\\c#\\aaaaaaaaa\\ShootTheZombies\\ShootTheZombies.csproj",
+        "projectUniqueName": "K:\\2024_SR_12IT1\\AS91897 - Game\\realyreally new\\ShootTheZombies\\ShootTheZombies.csproj",
         "projectName": "ShootTheZombies",
-        "projectPath": "C:\\Projects\\c#\\aaaaaaaaa\\ShootTheZombies\\ShootTheZombies.csproj",
-        "packagesPath": "C:\\Users\\thisi\\.nuget\\packages\\",
-        "outputPath": "C:\\Projects\\c#\\aaaaaaaaa\\ShootTheZombies\\obj\\",
+        "projectPath": "K:\\2024_SR_12IT1\\AS91897 - Game\\realyreally new\\ShootTheZombies\\ShootTheZombies.csproj",
+        "packagesPath": "C:\\Users\\1rrobin\\.nuget\\packages\\",
+        "outputPath": "K:\\2024_SR_12IT1\\AS91897 - Game\\realyreally new\\ShootTheZombies\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\thisi\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\1rrobin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -38,11 +34,6 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -54,29 +45,10 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[6.0.28, 6.0.28]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Host.win-x64",
-              "version": "[6.0.28, 6.0.28]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[6.0.28, 6.0.28]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[6.0.28, 6.0.28]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
@@ -85,7 +57,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     }

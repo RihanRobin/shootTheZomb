@@ -31,7 +31,7 @@ namespace ShootTheZombies
         int playerWidth = 37;
         int playerSpeed = 8;
         int zombieSpeed = 2;
-        int ammo = 10;
+        int ammo = 5;
         int score = 0;
         Random rnd = new Random();
         string shootDirection;
@@ -293,9 +293,10 @@ namespace ShootTheZombies
             }
             else
             {
-                // mainTimer.Stop();
-                // mainTimer.Dispose();
                 gameOver = true;
+                playerHealth = 100;
+                MessageBox.Show("Game Over, Score : " + score);
+                
             }
         }
 

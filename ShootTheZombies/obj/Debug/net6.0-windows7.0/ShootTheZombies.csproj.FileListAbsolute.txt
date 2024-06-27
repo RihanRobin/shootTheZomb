@@ -103,3 +103,24 @@ C:\Projects\c#\aaaaaaaaa\ShootTheZombies\obj\Debug\net6.0-windows7.0\refint\Shoo
 C:\Projects\c#\aaaaaaaaa\ShootTheZombies\obj\Debug\net6.0-windows7.0\ShootTheZombies.pdb
 C:\Projects\c#\aaaaaaaaa\ShootTheZombies\obj\Debug\net6.0-windows7.0\ShootTheZombies.genruntimeconfig.cache
 C:\Projects\c#\aaaaaaaaa\ShootTheZombies\obj\Debug\net6.0-windows7.0\ref\ShootTheZombies.dll
+K:\2024_SR_12IT1\AS91897 - Game\realyreally new\ShootTheZombies\bin\Debug\net6.0-windows7.0\ShootTheZombies.exe
+K:\2024_SR_12IT1\AS91897 - Game\realyreally new\ShootTheZombies\bin\Debug\net6.0-windows7.0\ShootTheZombies.deps.json
+K:\2024_SR_12IT1\AS91897 - Game\realyreally new\ShootTheZombies\bin\Debug\net6.0-windows7.0\ShootTheZombies.runtimeconfig.json
+K:\2024_SR_12IT1\AS91897 - Game\realyreally new\ShootTheZombies\bin\Debug\net6.0-windows7.0\ShootTheZombies.dll
+K:\2024_SR_12IT1\AS91897 - Game\realyreally new\ShootTheZombies\bin\Debug\net6.0-windows7.0\ShootTheZombies.pdb
+K:\2024_SR_12IT1\AS91897 - Game\realyreally new\ShootTheZombies\obj\Debug\net6.0-windows7.0\ShootTheZombies.csproj.AssemblyReference.cache
+K:\2024_SR_12IT1\AS91897 - Game\realyreally new\ShootTheZombies\obj\Debug\net6.0-windows7.0\ShootTheZombies.ControlsScreen.resources
+K:\2024_SR_12IT1\AS91897 - Game\realyreally new\ShootTheZombies\obj\Debug\net6.0-windows7.0\ShootTheZombies.StartScreen.resources
+K:\2024_SR_12IT1\AS91897 - Game\realyreally new\ShootTheZombies\obj\Debug\net6.0-windows7.0\ShootTheZombies.GameMain.resources
+K:\2024_SR_12IT1\AS91897 - Game\realyreally new\ShootTheZombies\obj\Debug\net6.0-windows7.0\ShootTheZombies.GameShop.resources
+K:\2024_SR_12IT1\AS91897 - Game\realyreally new\ShootTheZombies\obj\Debug\net6.0-windows7.0\ShootTheZombies.Properties.Resources.resources
+K:\2024_SR_12IT1\AS91897 - Game\realyreally new\ShootTheZombies\obj\Debug\net6.0-windows7.0\ShootTheZombies.csproj.GenerateResource.cache
+K:\2024_SR_12IT1\AS91897 - Game\realyreally new\ShootTheZombies\obj\Debug\net6.0-windows7.0\ShootTheZombies.GeneratedMSBuildEditorConfig.editorconfig
+K:\2024_SR_12IT1\AS91897 - Game\realyreally new\ShootTheZombies\obj\Debug\net6.0-windows7.0\ShootTheZombies.AssemblyInfoInputs.cache
+K:\2024_SR_12IT1\AS91897 - Game\realyreally new\ShootTheZombies\obj\Debug\net6.0-windows7.0\ShootTheZombies.AssemblyInfo.cs
+K:\2024_SR_12IT1\AS91897 - Game\realyreally new\ShootTheZombies\obj\Debug\net6.0-windows7.0\ShootTheZombies.csproj.CoreCompileInputs.cache
+K:\2024_SR_12IT1\AS91897 - Game\realyreally new\ShootTheZombies\obj\Debug\net6.0-windows7.0\ShootTheZombies.dll
+K:\2024_SR_12IT1\AS91897 - Game\realyreally new\ShootTheZombies\obj\Debug\net6.0-windows7.0\refint\ShootTheZombies.dll
+K:\2024_SR_12IT1\AS91897 - Game\realyreally new\ShootTheZombies\obj\Debug\net6.0-windows7.0\ShootTheZombies.pdb
+K:\2024_SR_12IT1\AS91897 - Game\realyreally new\ShootTheZombies\obj\Debug\net6.0-windows7.0\ShootTheZombies.genruntimeconfig.cache
+K:\2024_SR_12IT1\AS91897 - Game\realyreally new\ShootTheZombies\obj\Debug\net6.0-windows7.0\ref\ShootTheZombies.dll
