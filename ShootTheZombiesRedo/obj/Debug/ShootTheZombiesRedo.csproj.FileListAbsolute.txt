@@ -1,0 +1,41 @@
+C:\Users\thisi\Downloads\ShootTheZombiesRedo-20240702T075659Z-001\ShootTheZombiesRedo\ShootTheZombiesRedo\bin\Debug\ShootTheZombiesRedo.exe.config
+C:\Users\thisi\Downloads\ShootTheZombiesRedo-20240702T075659Z-001\ShootTheZombiesRedo\ShootTheZombiesRedo\bin\Debug\ShootTheZombiesRedo.exe
+C:\Users\thisi\Downloads\ShootTheZombiesRedo-20240702T075659Z-001\ShootTheZombiesRedo\ShootTheZombiesRedo\bin\Debug\ShootTheZombiesRedo.pdb
+C:\Users\thisi\Downloads\ShootTheZombiesRedo-20240702T075659Z-001\ShootTheZombiesRedo\ShootTheZombiesRedo\obj\Debug\ShootTheZombiesRedo.csproj.AssemblyReference.cache
+C:\Users\thisi\Downloads\ShootTheZombiesRedo-20240702T075659Z-001\ShootTheZombiesRedo\ShootTheZombiesRedo\obj\Debug\ShootTheZombiesRedo.Properties.Resources.resources
+C:\Users\thisi\Downloads\ShootTheZombiesRedo-20240702T075659Z-001\ShootTheZombiesRedo\ShootTheZombiesRedo\obj\Debug\ShootTheZombiesRedo.StartMenu.resources
+C:\Users\thisi\Downloads\ShootTheZombiesRedo-20240702T075659Z-001\ShootTheZombiesRedo\ShootTheZombiesRedo\obj\Debug\ShootTheZombiesRedo.csproj.GenerateResource.cache
+C:\Users\thisi\Downloads\ShootTheZombiesRedo-20240702T075659Z-001\ShootTheZombiesRedo\ShootTheZombiesRedo\obj\Debug\ShootTheZombiesRedo.csproj.CoreCompileInputs.cache
+C:\Users\thisi\Downloads\ShootTheZombiesRedo-20240702T075659Z-001\ShootTheZombiesRedo\ShootTheZombiesRedo\obj\Debug\ShootTheZombiesRedo.exe
+C:\Users\thisi\Downloads\ShootTheZombiesRedo-20240702T075659Z-001\ShootTheZombiesRedo\ShootTheZombiesRedo\obj\Debug\ShootTheZombiesRedo.pdb
+C:\Users\thisi\Downloads\ShootTheZombiesRedo-20240702T075659Z-001\ShootTheZombiesRedo\ShootTheZombiesRedo\obj\Debug\ShootTheZombiesRedo.ControlsScreen.resources
+C:\Users\thisi\Downloads\ShootTheZombiesRedo-20240702T075659Z-001\ShootTheZombiesRedo\ShootTheZombiesRedo\obj\Debug\ShootTheZombiesRedo.GameShop.resources
+C:\Users\thisi\Downloads\ShootTheZombiesRedo-20240702T075659Z-001\ShootTheZombiesRedo\ShootTheZombiesRedo\obj\Debug\ShootTheZombiesRedo.GameMain.resources
+\\hbhs.local\users\Home\Students\1rrobin\downloads\a\ShootTheZombiesRedoA\ShootTheZombiesRedo\bin\Debug\ShootTheZombiesRedo.exe.config
+\\hbhs.local\users\Home\Students\1rrobin\downloads\a\ShootTheZombiesRedoA\ShootTheZombiesRedo\bin\Debug\ShootTheZombiesRedo.exe
+\\hbhs.local\users\Home\Students\1rrobin\downloads\a\ShootTheZombiesRedoA\ShootTheZombiesRedo\bin\Debug\ShootTheZombiesRedo.pdb
+\\hbhs.local\users\Home\Students\1rrobin\downloads\a\ShootTheZombiesRedoA\ShootTheZombiesRedo\obj\Debug\ShootTheZombiesRedo.csproj.AssemblyReference.cache
+\\hbhs.local\users\Home\Students\1rrobin\downloads\a\ShootTheZombiesRedoA\ShootTheZombiesRedo\obj\Debug\ShootTheZombiesRedo.csproj.SuggestedBindingRedirects.cache
+\\hbhs.local\users\Home\Students\1rrobin\downloads\a\ShootTheZombiesRedoA\ShootTheZombiesRedo\obj\Debug\ShootTheZombiesRedo.ControlsScreen.resources
+\\hbhs.local\users\Home\Students\1rrobin\downloads\a\ShootTheZombiesRedoA\ShootTheZombiesRedo\obj\Debug\ShootTheZombiesRedo.GameMain.resources
+\\hbhs.local\users\Home\Students\1rrobin\downloads\a\ShootTheZombiesRedoA\ShootTheZombiesRedo\obj\Debug\ShootTheZombiesRedo.GameShop.resources
+\\hbhs.local\users\Home\Students\1rrobin\downloads\a\ShootTheZombiesRedoA\ShootTheZombiesRedo\obj\Debug\ShootTheZombiesRedo.Properties.Resources.resources
+\\hbhs.local\users\Home\Students\1rrobin\downloads\a\ShootTheZombiesRedoA\ShootTheZombiesRedo\obj\Debug\ShootTheZombiesRedo.StartMenu.resources
+\\hbhs.local\users\Home\Students\1rrobin\downloads\a\ShootTheZombiesRedoA\ShootTheZombiesRedo\obj\Debug\ShootTheZombiesRedo.csproj.GenerateResource.cache
+\\hbhs.local\users\Home\Students\1rrobin\downloads\a\ShootTheZombiesRedoA\ShootTheZombiesRedo\obj\Debug\ShootTheZombiesRedo.csproj.CoreCompileInputs.cache
+\\hbhs.local\users\Home\Students\1rrobin\downloads\a\ShootTheZombiesRedoA\ShootTheZombiesRedo\obj\Debug\ShootTheZombiesRedo.exe
+\\hbhs.local\users\Home\Students\1rrobin\downloads\a\ShootTheZombiesRedoA\ShootTheZombiesRedo\obj\Debug\ShootTheZombiesRedo.pdb
+K:\2024_SR_12IT1\AS91897 - Game\ShootTheZombiesRedoA\ShootTheZombiesRedo\bin\Debug\ShootTheZombiesRedo.exe.config
+K:\2024_SR_12IT1\AS91897 - Game\ShootTheZombiesRedoA\ShootTheZombiesRedo\bin\Debug\ShootTheZombiesRedo.exe
+K:\2024_SR_12IT1\AS91897 - Game\ShootTheZombiesRedoA\ShootTheZombiesRedo\bin\Debug\ShootTheZombiesRedo.pdb
+K:\2024_SR_12IT1\AS91897 - Game\ShootTheZombiesRedoA\ShootTheZombiesRedo\obj\Debug\ShootTheZombiesRedo.csproj.AssemblyReference.cache
+K:\2024_SR_12IT1\AS91897 - Game\ShootTheZombiesRedoA\ShootTheZombiesRedo\obj\Debug\ShootTheZombiesRedo.csproj.SuggestedBindingRedirects.cache
+K:\2024_SR_12IT1\AS91897 - Game\ShootTheZombiesRedoA\ShootTheZombiesRedo\obj\Debug\ShootTheZombiesRedo.ControlsScreen.resources
+K:\2024_SR_12IT1\AS91897 - Game\ShootTheZombiesRedoA\ShootTheZombiesRedo\obj\Debug\ShootTheZombiesRedo.GameMain.resources
+K:\2024_SR_12IT1\AS91897 - Game\ShootTheZombiesRedoA\ShootTheZombiesRedo\obj\Debug\ShootTheZombiesRedo.GameShop.resources
+K:\2024_SR_12IT1\AS91897 - Game\ShootTheZombiesRedoA\ShootTheZombiesRedo\obj\Debug\ShootTheZombiesRedo.Properties.Resources.resources
+K:\2024_SR_12IT1\AS91897 - Game\ShootTheZombiesRedoA\ShootTheZombiesRedo\obj\Debug\ShootTheZombiesRedo.StartMenu.resources
+K:\2024_SR_12IT1\AS91897 - Game\ShootTheZombiesRedoA\ShootTheZombiesRedo\obj\Debug\ShootTheZombiesRedo.csproj.GenerateResource.cache
+K:\2024_SR_12IT1\AS91897 - Game\ShootTheZombiesRedoA\ShootTheZombiesRedo\obj\Debug\ShootTheZombiesRedo.csproj.CoreCompileInputs.cache
+K:\2024_SR_12IT1\AS91897 - Game\ShootTheZombiesRedoA\ShootTheZombiesRedo\obj\Debug\ShootTheZombiesRedo.exe
+K:\2024_SR_12IT1\AS91897 - Game\ShootTheZombiesRedoA\ShootTheZombiesRedo\obj\Debug\ShootTheZombiesRedo.pdb
