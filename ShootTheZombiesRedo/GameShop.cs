@@ -13,6 +13,13 @@ namespace ShootTheZombiesRedo
 {
     public partial class GameShop : Form
     {
+
+        public int score { get; set; }
+        public int playerHealth { get; set; } = 100;
+
+        public int coin { get; set; }
+
+        public int ammo { get; set; }
         public GameShop()
         {
             InitializeComponent();
@@ -25,8 +32,8 @@ namespace ShootTheZombiesRedo
         int slowDownFrameRate = 0;
         bool goLeft, goRight, goUp, goDown;
         bool inShop = true;
-        int playerX = 45;
-        int playerY = 25;
+        int playerX = 480;
+        int playerY = 50;
         int playerHeight = 68;
         int playerWidth = 37;
         int playerSpeed = 8;
@@ -130,12 +137,16 @@ namespace ShootTheZombiesRedo
 
         private void CheckCollisionWithDoor()
         {
-            // Assuming `shopBounds` is defined somewhere in your code as a Rectangle for the shop area
+            // Assuming shopBounds is defined somewhere in your code as a Rectangle for the shop area
             if (inShop && playerBounds.IntersectsWith(door.Bounds))
             {
                 this.Hide();
                 shopTimer.Stop();
                 GameMain frm = new GameMain();
+                frm.score = score;
+                frm.playerHealth = playerHealth;
+                frm.ammo = ammo;
+                frm.coin = coin;
                 frm.Show();
                 inShop = true;
             }

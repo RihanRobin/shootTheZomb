@@ -39,3 +39,17 @@ K:\2024_SR_12IT1\AS91897 - Game\ShootTheZombiesRedoA\ShootTheZombiesRedo\obj\Deb
 K:\2024_SR_12IT1\AS91897 - Game\ShootTheZombiesRedoA\ShootTheZombiesRedo\obj\Debug\ShootTheZombiesRedo.csproj.CoreCompileInputs.cache
 K:\2024_SR_12IT1\AS91897 - Game\ShootTheZombiesRedoA\ShootTheZombiesRedo\obj\Debug\ShootTheZombiesRedo.exe
 K:\2024_SR_12IT1\AS91897 - Game\ShootTheZombiesRedoA\ShootTheZombiesRedo\obj\Debug\ShootTheZombiesRedo.pdb
+C:\Projects\c#\VERYEYRYERYEYRYER NEW\ShootTheZombiesRedo\bin\Debug\ShootTheZombiesRedo.exe.config
+C:\Projects\c#\VERYEYRYERYEYRYER NEW\ShootTheZombiesRedo\bin\Debug\ShootTheZombiesRedo.exe
+C:\Projects\c#\VERYEYRYERYEYRYER NEW\ShootTheZombiesRedo\bin\Debug\ShootTheZombiesRedo.pdb
+C:\Projects\c#\VERYEYRYERYEYRYER NEW\ShootTheZombiesRedo\obj\Debug\ShootTheZombiesRedo.csproj.AssemblyReference.cache
+C:\Projects\c#\VERYEYRYERYEYRYER NEW\ShootTheZombiesRedo\obj\Debug\ShootTheZombiesRedo.ControlsScreen.resources
+C:\Projects\c#\VERYEYRYERYEYRYER NEW\ShootTheZombiesRedo\obj\Debug\ShootTheZombiesRedo.GameMain.resources
+C:\Projects\c#\VERYEYRYERYEYRYER NEW\ShootTheZombiesRedo\obj\Debug\ShootTheZombiesRedo.GameShop.resources
+C:\Projects\c#\VERYEYRYERYEYRYER NEW\ShootTheZombiesRedo\obj\Debug\ShootTheZombiesRedo.Properties.Resources.resources
+C:\Projects\c#\VERYEYRYERYEYRYER NEW\ShootTheZombiesRedo\obj\Debug\ShootTheZombiesRedo.StartMenu.resources
+C:\Projects\c#\VERYEYRYERYEYRYER NEW\ShootTheZombiesRedo\obj\Debug\ShootTheZombiesRedo.csproj.GenerateResource.cache
+C:\Projects\c#\VERYEYRYERYEYRYER NEW\ShootTheZombiesRedo\obj\Debug\ShootTheZombiesRedo.csproj.CoreCompileInputs.cache
+C:\Projects\c#\VERYEYRYERYEYRYER NEW\ShootTheZombiesRedo\obj\Debug\ShootTheZombiesRedo.exe
+C:\Projects\c#\VERYEYRYERYEYRYER NEW\ShootTheZombiesRedo\obj\Debug\ShootTheZombiesRedo.pdb
+C:\Projects\c#\VERYEYRYERYEYRYER NEW\ShootTheZombiesRedo\obj\Debug\ShootTheZombiesRedo.EndScreen.resources

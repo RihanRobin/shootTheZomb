@@ -23,6 +23,11 @@ namespace ShootTheZombiesRedo
 
             player.SoundLocation = "10 bit.wav";
             player.PlayLooping();
+
+
+            this.BackgroundImage = Image.FromFile("titlebackground.png");
+            this.BackgroundImageLayout = ImageLayout.Stretch;
+            this.DoubleBuffered = true;
         }
 
         private void button1_Click_1(object sender, EventArgs e)

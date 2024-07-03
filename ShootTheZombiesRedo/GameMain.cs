@@ -26,21 +26,26 @@ namespace ShootTheZombiesRedo
         bool goLeft, goRight, goUp, goDown;
         bool gameOver = false;
         bool inShop = false;
-        int playerHealth = 100;
-        int playerX = 915;
-        int playerY = 465;
+        bool isAmmoDropped = false;
+        
+        int playerX = 485;
+        int playerY = 485;
         int playerHeight = 68;
         int playerWidth = 37;
         int playerSpeed = 10;
         int zombieSpeed = 2;
-        int ammo = 10;
-        int score = 0;
+        //int score = 0;
         Random rnd = new Random();
         string shootDirection;
         Rectangle playerBounds;  // Player collision bounds
 
         Dictionary<PictureBox, int> zombieFrameIndices = new Dictionary<PictureBox, int>();
         Dictionary<PictureBox, string> zombieDirections = new Dictionary<PictureBox, string>();
+
+        public int score { get; set; }
+        public int coin { get; set; }
+        public int ammo { get; set; } = 5;
+        public int playerHealth { get; set; } = 100;
 
         public GameMain()
         {
@@ -50,9 +55,6 @@ namespace ShootTheZombiesRedo
             {
                 MakeZombies(); // Initialize with 10 zombies
             }
-
-
-           
         }
 
         private void KeyIsDown(object sender, KeyEventArgs e)
@@ -128,7 +130,7 @@ namespace ShootTheZombiesRedo
             {
                 overlap = false;
                 zombie.Left = rnd.Next(10, 800);
-                zombie.Top = rnd.Next(50, 500);
+                zombie.Top = rnd.Next(50, 450);
 
                 foreach (Control x in this.Controls)
                 {
@@ -153,6 +155,14 @@ namespace ShootTheZombiesRedo
             CheckCollisionWithShop();
             UpdateHealthBar();
             this.Invalidate(); // Redraw the form
+            labelScore.Text = "Score : " + score;
+            labelCoin.Text = "Coin(s) : " + coin;
+
+            if (ammo == 0 && !isAmmoDropped)
+            {
+                DropAmmo();
+                isAmmoDropped = true;
+            }
 
             foreach (Control x in this.Controls)
             {
@@ -162,6 +172,7 @@ namespace ShootTheZombiesRedo
                     this.Controls.Remove((PictureBox)x);
                     ((PictureBox)x).Dispose();
                     ammo += 5;
+                    isAmmoDropped = false;
                 }
 
                 // Check for zombie interactions
@@ -177,11 +188,12 @@ namespace ShootTheZombiesRedo
                     {
                         if (j is PictureBox && j.Tag == "bullet" && x is PictureBox && x.Tag == "zombie" && x.Bounds.IntersectsWith(j.Bounds))
                         {
-                            score++;
                             this.Controls.Remove(j);
                             j.Dispose();
                             this.Controls.Remove(x);
                             x.Dispose();
+                            score++;
+                            coin+=3;
                             zombieFrameIndices.Remove((PictureBox)x);
                             zombieDirections.Remove((PictureBox)x);
                             MakeZombies();
@@ -200,6 +212,8 @@ namespace ShootTheZombiesRedo
             playerDeath = Directory.GetFiles("death", "*.png").ToList();
             zombieMovements = Directory.GetFiles("zwalk", "*.png").ToList();
             playerBounds = new Rectangle(playerX, playerY, playerWidth, playerHeight);
+
+            
 
             this.BackgroundImage = Image.FromFile("background.png");
             this.BackgroundImageLayout = ImageLayout.Stretch;
@@ -237,22 +251,22 @@ namespace ShootTheZombiesRedo
 
         private void UpdatePlayerMovement()
         {
-            if (goLeft && playerX > 0)
+            if (goLeft && playerX > 10)
             {
                 playerX -= playerSpeed;
                 AnimatePlayer(6, 11);
             }
-            else if (goRight && playerX + playerWidth < this.ClientSize.Width)
+            else if (goRight && playerX + playerWidth < this.ClientSize.Width - 10)
             {
                 playerX += playerSpeed;
                 AnimatePlayer(12, 17);
             }
-            else if (goUp && playerY > 0)
+            else if (goUp && playerY > 30)
             {
                 playerY -= playerSpeed;
                 AnimatePlayer(18, 23);
             }
-            else if (goDown && playerY + playerHeight < this.ClientSize.Height)
+            else if (goDown && playerY + playerHeight < this.ClientSize.Height - 10)
             {
                 playerY += playerSpeed;
                 AnimatePlayer(0, 5);
@@ -284,15 +298,19 @@ namespace ShootTheZombiesRedo
 
         private void CheckCollisionWithShop()
         {
-            
+
             if (!inShop && playerBounds.IntersectsWith(door.Bounds))
-                {
-                    this.Hide();
-                    mainTimer.Stop();
-                    GameShop frm = new GameShop();
-                    frm.Show();
-                    inShop = true;
-                }
+            {
+                this.Hide();
+                mainTimer.Stop();
+                GameShop frm = new GameShop();
+                frm.score = score;
+                frm.playerHealth = playerHealth;
+                frm.ammo = ammo;
+                frm.coin = coin;
+                frm.Show();
+                inShop = true;
+            }
         }
 
         private void UpdateHealthBar()
@@ -303,11 +321,18 @@ namespace ShootTheZombiesRedo
             }
             else
             {
+                EndScreen form2 = new EndScreen();
+                form2.coin = coin;
+                form2.score = score;
+
+
                 mainTimer.Stop();
                 mainTimer.Dispose();
                 gameOver = true;
 
-                this.Hide();
+                
+                form2.Show();
+                this.Close();
 
             }
         }
@@ -369,6 +394,7 @@ namespace ShootTheZombiesRedo
 
         private void DropAmmo()
         {
+            isAmmoDropped = true;
             PictureBox ammo = new PictureBox();
             ammo.Image = Image.FromFile("fireammo2.png");
             ammo.BackColor = Color.Transparent;
@@ -378,16 +404,7 @@ namespace ShootTheZombiesRedo
             ammo.Tag = "ammo";
             this.Controls.Add(ammo);
 
-            foreach (Control x in this.Controls)
-            {
-                if (x is PictureBox && x.Tag == "zombie" && ammo.Bounds.IntersectsWith(x.Bounds))
-                {
-                    this.Controls.Remove(ammo);
-                    ammo.Dispose();
-                    DropAmmo();
-                    break;
-                }
-            }
+
         }
     }
 }
