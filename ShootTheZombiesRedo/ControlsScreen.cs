@@ -14,7 +14,7 @@ namespace ShootTheZombiesRedo
     {
 
         int imageChange = 4000;
-        int totalDuration = 6000;
+        int totalDuration = 12000;
         int elapsedTime = 0;
         public ControlsScreen()
         {
@@ -30,7 +30,7 @@ namespace ShootTheZombiesRedo
             if (elapsedTime >= imageChange && elapsedTime < totalDuration)
             {
                 // Change the image in the PictureBox
-                pictureBox1.Image = Image.FromFile("slogan.png"); // Replace with your new image
+                pictureBox1.Image = Image.FromFile("slogan1.png"); // Replace with your new image
             }
 
             if (elapsedTime >= totalDuration)
