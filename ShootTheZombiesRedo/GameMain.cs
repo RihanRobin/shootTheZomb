@@ -5,9 +5,12 @@ using System.Data;
 using System.Drawing;
 using System.IO;
 using System.Linq;
+using System.Reflection.Emit;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Microsoft.VisualBasic.FileIO;
+
 
 namespace ShootTheZombiesRedo
 {
@@ -16,6 +19,12 @@ namespace ShootTheZombiesRedo
         // Images and movements for player and zombie animations
         Image playerImage;
         List<string> playerMovements = new List<string>();
+
+        string filePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Wildlife Survival.csv");
+
+
+        //fact list
+        List<string> SurvivalFacts = new List<string>();
 
         // Player and game state variables
         int frameIndex = 0;
@@ -46,10 +55,39 @@ namespace ShootTheZombiesRedo
         {
             InitializeComponent();
             SetUp();
+            SurvivalFacts = ReadFactsFromCSV("Wildlife Survival.csv");
             for (int i = 0; i < 5; i++)
             {
                 MakeZombies(); // Initialize with 10 zombies
             }
+        }
+
+        private List<string> ReadFactsFromCSV(string fileName)
+        {
+            List<string> facts = new List<string>();
+
+            // Construct the full file path
+            string filePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, fileName);
+
+            // Check if the file exists
+            if (File.Exists(filePath))
+            {
+                using (TextFieldParser parser = new TextFieldParser(filePath))
+                {
+                    parser.TextFieldType = FieldType.Delimited;
+                    parser.SetDelimiters(",");
+
+                    while (!parser.EndOfData)
+                    {
+                        string[] fields = parser.ReadFields();
+                        if (fields != null && fields.Length > 0)
+                        {
+                            facts.Add(fields[0]); // Assuming first column contains facts
+                        }
+                    }
+                }
+            }
+            return facts;
         }
 
         private void KeyIsDown(object sender, KeyEventArgs e)
@@ -164,6 +202,17 @@ namespace ShootTheZombiesRedo
                 // Check for ammo pickups
                 if (x is PictureBox && x.Tag == "ammo" && ((PictureBox)x).Bounds.IntersectsWith(playerBounds))
                 {
+                    if (SurvivalFacts.Count > 0)
+                    {
+                        // Generate a random index
+                        Random random = new Random();
+                        int index = random.Next(SurvivalFacts.Count);
+
+                        // Set label3 text to a random fact
+                        label3.BackColor = Color.Transparent;
+                        label3.Text = SurvivalFacts[index];
+                    }
+
                     this.Controls.Remove((PictureBox)x);
                     ((PictureBox)x).Dispose();
                     ammo += 5;

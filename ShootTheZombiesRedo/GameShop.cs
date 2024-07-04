@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.VisualBasic.FileIO;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -17,37 +18,11 @@ namespace ShootTheZombiesRedo
         public int playerHealth { get; set; } = 100;
         public int coin { get; set; }
         public int ammo { get; set; }
-        public GameShop()
-        {
-            InitializeComponent();
-            SetUp();
-        }
 
+        string filePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Wound Management.csv");
 
         //Fact List
-        List<string> FirstAidFacts = new List<string>
-            {
-                "First Aid Fact : First aid is the immediate care given to someone who is injured or suddenly becomes ill.",
-                "First Aid Fact : It's crucial to stay calm and assess the situation before taking action in a first aid scenario.",
-                "First Aid Fact : Knowing how to perform CPR (cardiopulmonary resuscitation) can save someone's life if their heart stops beating.",
-                "First Aid Fact : Applying pressure to a bleeding wound can help stop or slow down bleeding until medical help arrives.",
-                "First Aid Fact : Elevating an injured limb can reduce swelling and pain.",
-                "First Aid Fact : Never move someone who might have a spinal injury unless it's absolutely necessary to prevent further harm.",
-                "First Aid Fact : Keeping a first aid kit at home and in your car is important for emergencies.",
-                "First Aid Fact : Knowing how to recognize signs of a heart attack or stroke can prompt quick action and save a life.",
-                "First Aid Fact : Learning the Heimlich maneuver can help clear a blocked airway in someone who is choking.",
-                "First Aid Fact : Treating minor burns with cool, running water can ease pain and prevent further damage.",
-                "First Aid Fact : Always check for allergies before administering any medication or treatment to someone else.",
-                "First Aid Fact : Knowing how to apply a sling or splint can stabilize a broken bone or injured joint.",
-                "First Aid Fact : Understanding when and how to call emergency services (like 911) is crucial in serious situations.",
-                "First Aid Fact : Keeping yourself safe while providing first aid is important; don't put yourself in danger.",
-                "First Aid Fact : Reassuring and comforting someone who is injured or ill can help reduce panic and stress.",
-                "First Aid Fact : It's important to monitor someone's breathing and pulse while providing first aid.",
-                "First Aid Fact : Learning basic first aid techniques can give you confidence to act in an emergency.",
-                "First Aid Fact : Understanding the basics of wound care and infection prevention is essential.",
-                "First Aid Fact : Clear communication with emergency responders can help them provide the best care upon arrival.",
-                "First Aid Fact : Regularly refreshing your first aid skills through courses or practice can keep your knowledge up-to-date."
-            };
+        List<string> FirstAidFacts = new List<string>();
         Image playerImage;
         List<string> playerMovements = new List<string>();
         int frameIndex = 0;
@@ -61,6 +36,14 @@ namespace ShootTheZombiesRedo
         int playerSpeed = 8;
         string facing;
         Rectangle playerBounds;  // Player collision bounds
+        public GameShop()
+        {
+            InitializeComponent();
+            FirstAidFacts = ReadFactsFromCSV("Wound Management.csv");
+            SetUp();
+        }
+
+        
 
         private void KeyIsDown(object sender, KeyEventArgs e)
         {
@@ -75,6 +58,35 @@ namespace ShootTheZombiesRedo
             if (e.KeyCode == Keys.Down) facing = "down";
 
             if (e.KeyCode == Keys.Escape) Application.Exit();
+        }
+
+        private List<string> ReadFactsFromCSV(string fileName)
+        {
+            List<string> facts = new List<string>();
+
+            // Construct the full file path
+            string filePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, fileName);
+
+            // Check if the file exists
+            if (File.Exists(filePath))
+            {
+                using (TextFieldParser parser = new TextFieldParser(filePath))
+                {
+                    parser.TextFieldType = FieldType.Delimited;
+                    parser.SetDelimiters(",");
+
+                    while (!parser.EndOfData)
+                    {
+                        string[] fields = parser.ReadFields();
+                        if (fields != null && fields.Length > 0)
+                        {
+                            facts.Add(fields[0]); // Assuming first column contains facts
+                        }
+                    }
+                }
+            }
+
+            return facts;
         }
 
         private void KeyIsUp(object sender, KeyEventArgs e)
@@ -201,7 +213,7 @@ namespace ShootTheZombiesRedo
 
             if (playerHealth < 100)
             {
-                DialogResult dialogResult = MessageBox.Show("Do you want to increase your health by 50 for 50 coins?", "Increase Health", MessageBoxButtons.YesNo);
+                DialogResult dialogResult = MessageBox.Show("Do you want to increase your health by 50 for $60 ?", "Increase Health", MessageBoxButtons.YesNo);
                 if (dialogResult == DialogResult.Yes)
                 {
 
@@ -213,7 +225,7 @@ namespace ShootTheZombiesRedo
                     }
                     else
                     {
-                        MessageBox.Show("Not enough coins!");
+                        MessageBox.Show("Not enough cash!");
                     }
                 }
             }
@@ -227,9 +239,18 @@ namespace ShootTheZombiesRedo
 
         private void PictureBox2_Click(object sender, EventArgs e)
         {
+            if (FirstAidFacts.Count > 0)
+            {
+                // Generate a random index
+                Random random = new Random();
+                int index = random.Next(FirstAidFacts.Count);
+
+                // Set label3 text to a random fact
+                label3.Text = FirstAidFacts[index];
+            }
             if (playerHealth < 100) 
             {
-                DialogResult dialogResult = MessageBox.Show("Do you want to heal fully for 100 coins?", "Increase Health", MessageBoxButtons.YesNo);
+                DialogResult dialogResult = MessageBox.Show("Do you want to heal fully for $100 ?", "Increase Health", MessageBoxButtons.YesNo);
                 if (dialogResult == DialogResult.Yes)
                 {
                     if (coin >= 100)
@@ -240,7 +261,7 @@ namespace ShootTheZombiesRedo
                     }
                     else
                     {
-                        MessageBox.Show("Not enough coins!");
+                        MessageBox.Show("Not enough cash!");
                     }
                 }
             }

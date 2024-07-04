@@ -18,7 +18,7 @@ namespace ShootTheZombiesRedo
             InitializeComponent();
 
             this.score = score;
-            labelStats.Text = "Zombies Killed : " + this.score + "\nCash on hand : " + coin;
+            labelStats.Text = "Zombies Killed : " + this.score + "\nCash on hand : $" + coin;
         }
 
         private void KeyIsDown(object sender, KeyEventArgs e)
