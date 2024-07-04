@@ -52,6 +52,20 @@ namespace ShootTheZombiesRedo
             if (e.KeyCode == Keys.W) goUp = true;
             if (e.KeyCode == Keys.S) goDown = true;
 
+            if (e.KeyCode == Keys.M)
+            {
+                if (StartMenu.mute == false)
+                {
+                    StartMenu.mute = true;
+                    StartMenu.player.Stop();
+                }
+                else
+                {
+                    StartMenu.mute = false;
+                    StartMenu.player.Play();
+                }
+            }
+
             if (e.KeyCode == Keys.Right) facing = "right";
             if (e.KeyCode == Keys.Left) facing = "left";
             if (e.KeyCode == Keys.Up) facing = "up";

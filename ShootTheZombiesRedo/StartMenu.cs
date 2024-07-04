@@ -14,9 +14,9 @@ namespace ShootTheZombiesRedo
     public partial class StartMenu : Form
     {
 
-        System.Media.SoundPlayer player = new System.Media.SoundPlayer();
+        public static System.Media.SoundPlayer player = new System.Media.SoundPlayer();
         
-        bool mute = false;
+        public static bool mute = false;
         public StartMenu()
         {
             InitializeComponent();
@@ -55,6 +55,24 @@ namespace ShootTheZombiesRedo
                 mute = false;
                 pictureBox2.Image = Image.FromFile("play.png");
                 player.PlayLooping();
+            }
+        }
+
+        private void KeyIsDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Escape) Application.Exit();
+            if (e.KeyCode == Keys.M)
+            {
+                if (StartMenu.mute == false)
+                {
+                    StartMenu.mute = true;
+                    StartMenu.player.Stop();
+                }
+                else
+                {
+                    StartMenu.mute = false;
+                    StartMenu.player.Play();
+                }
             }
         }
     }

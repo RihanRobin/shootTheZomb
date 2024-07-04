@@ -23,7 +23,36 @@ namespace ShootTheZombiesRedo
 
         private void KeyIsDown(object sender, KeyEventArgs e)
         {
-            if (e.KeyCode == Keys.Escape) Application.Exit(); // Exit game
+            if (e.KeyCode == Keys.Escape) Application.Exit();
+            if (e.KeyCode == Keys.M)
+            {
+                if (StartMenu.mute == false)
+                {
+                    StartMenu.mute = true;
+                    StartMenu.player.Stop();
+                }
+                else
+                {
+                    StartMenu.mute = false;
+                    StartMenu.player.Play();
+                }
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            GameMain frm = new GameMain();
+            frm.score = 0;
+            frm.playerHealth = 100;
+            frm.ammo = 5;
+            frm.coin = 0;
+            frm.Show();
+            this.Hide();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Application.Exit(); // Exit game
         }
     }
 }

@@ -3,36 +3,52 @@
   "WorkspaceRootPath": "C:\\Projects\\c#\\VERYEYRYERYEYRYER NEW\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D3B00399-86AB-4C0E-9330-53923405FED0}|ShootTheZombiesRedo\\ShootTheZombiesRedo.csproj|C:\\Projects\\c#\\VERYEYRYERYEYRYER NEW\\shootthezombiesredo\\gameshop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D3B00399-86AB-4C0E-9330-53923405FED0}|ShootTheZombiesRedo\\ShootTheZombiesRedo.csproj|solutionrelative:shootthezombiesredo\\gameshop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D3B00399-86AB-4C0E-9330-53923405FED0}|ShootTheZombiesRedo\\ShootTheZombiesRedo.csproj|c:\\projects\\c#\\veryeyryeryeyryer new\\shootthezombiesredo\\properties\\resources.resx||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{D3B00399-86AB-4C0E-9330-53923405FED0}|ShootTheZombiesRedo\\ShootTheZombiesRedo.csproj|solutionrelative:shootthezombiesredo\\properties\\resources.resx||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{D3B00399-86AB-4C0E-9330-53923405FED0}|ShootTheZombiesRedo\\ShootTheZombiesRedo.csproj|c:\\projects\\c#\\veryeyryeryeyryer new\\shootthezombiesredo\\controlsscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D3B00399-86AB-4C0E-9330-53923405FED0}|ShootTheZombiesRedo\\ShootTheZombiesRedo.csproj|solutionrelative:shootthezombiesredo\\controlsscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D3B00399-86AB-4C0E-9330-53923405FED0}|ShootTheZombiesRedo\\ShootTheZombiesRedo.csproj|C:\\Projects\\c#\\VERYEYRYERYEYRYER NEW\\shootthezombiesredo\\gamemain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D3B00399-86AB-4C0E-9330-53923405FED0}|ShootTheZombiesRedo\\ShootTheZombiesRedo.csproj|solutionrelative:shootthezombiesredo\\gamemain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D3B00399-86AB-4C0E-9330-53923405FED0}|ShootTheZombiesRedo\\ShootTheZombiesRedo.csproj|C:\\Projects\\c#\\VERYEYRYERYEYRYER NEW\\shootthezombiesredo\\bullet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D3B00399-86AB-4C0E-9330-53923405FED0}|ShootTheZombiesRedo\\ShootTheZombiesRedo.csproj|solutionrelative:shootthezombiesredo\\bullet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D3B00399-86AB-4C0E-9330-53923405FED0}|ShootTheZombiesRedo\\ShootTheZombiesRedo.csproj|C:\\Projects\\c#\\VERYEYRYERYEYRYER NEW\\shootthezombiesredo\\gamemain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D3B00399-86AB-4C0E-9330-53923405FED0}|ShootTheZombiesRedo\\ShootTheZombiesRedo.csproj|solutionrelative:shootthezombiesredo\\gamemain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D3B00399-86AB-4C0E-9330-53923405FED0}|ShootTheZombiesRedo\\ShootTheZombiesRedo.csproj|C:\\Projects\\c#\\VERYEYRYERYEYRYER NEW\\shootthezombiesredo\\endscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D3B00399-86AB-4C0E-9330-53923405FED0}|ShootTheZombiesRedo\\ShootTheZombiesRedo.csproj|solutionrelative:shootthezombiesredo\\endscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D3B00399-86AB-4C0E-9330-53923405FED0}|ShootTheZombiesRedo\\ShootTheZombiesRedo.csproj|C:\\Projects\\c#\\VERYEYRYERYEYRYER NEW\\shootthezombiesredo\\endscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{D3B00399-86AB-4C0E-9330-53923405FED0}|ShootTheZombiesRedo\\ShootTheZombiesRedo.csproj|c:\\projects\\c#\\veryeyryeryeyryer new\\shootthezombiesredo\\startmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D3B00399-86AB-4C0E-9330-53923405FED0}|ShootTheZombiesRedo\\ShootTheZombiesRedo.csproj|solutionrelative:shootthezombiesredo\\startmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D3B00399-86AB-4C0E-9330-53923405FED0}|ShootTheZombiesRedo\\ShootTheZombiesRedo.csproj|c:\\projects\\c#\\veryeyryeryeyryer new\\shootthezombiesredo\\controlsscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D3B00399-86AB-4C0E-9330-53923405FED0}|ShootTheZombiesRedo\\ShootTheZombiesRedo.csproj|solutionrelative:shootthezombiesredo\\controlsscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D3B00399-86AB-4C0E-9330-53923405FED0}|ShootTheZombiesRedo\\ShootTheZombiesRedo.csproj|C:\\Projects\\c#\\VERYEYRYERYEYRYER NEW\\shootthezombiesredo\\gameshop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D3B00399-86AB-4C0E-9330-53923405FED0}|ShootTheZombiesRedo\\ShootTheZombiesRedo.csproj|solutionrelative:shootthezombiesredo\\gameshop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D3B00399-86AB-4C0E-9330-53923405FED0}|ShootTheZombiesRedo\\ShootTheZombiesRedo.csproj|c:\\projects\\c#\\veryeyryeryeyryer new\\shootthezombiesredo\\endscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{D3B00399-86AB-4C0E-9330-53923405FED0}|ShootTheZombiesRedo\\ShootTheZombiesRedo.csproj|solutionrelative:shootthezombiesredo\\endscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D3B00399-86AB-4C0E-9330-53923405FED0}|ShootTheZombiesRedo\\ShootTheZombiesRedo.csproj|C:\\Projects\\c#\\VERYEYRYERYEYRYER NEW\\shootthezombiesredo\\gamemain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{D3B00399-86AB-4C0E-9330-53923405FED0}|ShootTheZombiesRedo\\ShootTheZombiesRedo.csproj|solutionrelative:shootthezombiesredo\\gamemain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{D3B00399-86AB-4C0E-9330-53923405FED0}|ShootTheZombiesRedo\\ShootTheZombiesRedo.csproj|c:\\projects\\c#\\veryeyryeryeyryer new\\shootthezombiesredo\\startmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D3B00399-86AB-4C0E-9330-53923405FED0}|ShootTheZombiesRedo\\ShootTheZombiesRedo.csproj|solutionrelative:shootthezombiesredo\\startmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D3B00399-86AB-4C0E-9330-53923405FED0}|ShootTheZombiesRedo\\ShootTheZombiesRedo.csproj|c:\\projects\\c#\\veryeyryeryeyryer new\\shootthezombiesredo\\gameshop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{D3B00399-86AB-4C0E-9330-53923405FED0}|ShootTheZombiesRedo\\ShootTheZombiesRedo.csproj|C:\\Projects\\c#\\VERYEYRYERYEYRYER NEW\\shootthezombiesredo\\gameshop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{D3B00399-86AB-4C0E-9330-53923405FED0}|ShootTheZombiesRedo\\ShootTheZombiesRedo.csproj|solutionrelative:shootthezombiesredo\\gameshop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D3B00399-86AB-4C0E-9330-53923405FED0}|ShootTheZombiesRedo\\ShootTheZombiesRedo.csproj|C:\\Projects\\c#\\VERYEYRYERYEYRYER NEW\\shootthezombiesredo\\bullet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D3B00399-86AB-4C0E-9330-53923405FED0}|ShootTheZombiesRedo\\ShootTheZombiesRedo.csproj|solutionrelative:shootthezombiesredo\\bullet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D3B00399-86AB-4C0E-9330-53923405FED0}|ShootTheZombiesRedo\\ShootTheZombiesRedo.csproj|C:\\Projects\\c#\\VERYEYRYERYEYRYER NEW\\shootthezombiesredo\\properties\\resources.resx||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{D3B00399-86AB-4C0E-9330-53923405FED0}|ShootTheZombiesRedo\\ShootTheZombiesRedo.csproj|solutionrelative:shootthezombiesredo\\properties\\resources.resx||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D3B00399-86AB-4C0E-9330-53923405FED0}|ShootTheZombiesRedo\\ShootTheZombiesRedo.csproj|C:\\Projects\\c#\\VERYEYRYERYEYRYER NEW\\shootthezombiesredo\\gamemain.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -46,17 +62,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "GameMain.cs",
               "DocumentMoniker": "C:\\Projects\\c#\\VERYEYRYERYEYRYER NEW\\ShootTheZombiesRedo\\GameMain.cs",
               "RelativeDocumentMoniker": "ShootTheZombiesRedo\\GameMain.cs",
               "ToolTip": "C:\\Projects\\c#\\VERYEYRYERYEYRYER NEW\\ShootTheZombiesRedo\\GameMain.cs",
               "RelativeToolTip": "ShootTheZombiesRedo\\GameMain.cs",
-              "ViewState": "AQIAACQAAAAAAAAAAAAowFgAAAANAAAA",
+              "ViewState": "AQIAAHIAAAAAAAAAAAAcwI8AAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-02T09:26:01.871Z",
               "IsPinned": true,
@@ -64,13 +80,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 6,
               "Title": "GameShop.cs",
               "DocumentMoniker": "C:\\Projects\\c#\\VERYEYRYERYEYRYER NEW\\ShootTheZombiesRedo\\GameShop.cs",
               "RelativeDocumentMoniker": "ShootTheZombiesRedo\\GameShop.cs",
               "ToolTip": "C:\\Projects\\c#\\VERYEYRYERYEYRYER NEW\\ShootTheZombiesRedo\\GameShop.cs",
               "RelativeToolTip": "ShootTheZombiesRedo\\GameShop.cs",
-              "ViewState": "AQIAAJgAAAAAAAAAAADwv7IAAABCAAAA",
+              "ViewState": "AQIAACsAAAAAAAAAAAAcwEIAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-03T08:51:06.014Z",
               "IsPinned": true,
@@ -86,20 +102,106 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Resources.resx",
-              "DocumentMoniker": "C:\\Projects\\c#\\VERYEYRYERYEYRYER NEW\\ShootTheZombiesRedo\\Properties\\Resources.resx",
-              "RelativeDocumentMoniker": "ShootTheZombiesRedo\\Properties\\Resources.resx",
-              "ToolTip": "C:\\Projects\\c#\\VERYEYRYERYEYRYER NEW\\ShootTheZombiesRedo\\Properties\\Resources.resx",
-              "RelativeToolTip": "ShootTheZombiesRedo\\Properties\\Resources.resx",
-              "ViewState": "AQIAAH0AAAAAAAAAAAAkwI0AAAAHAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
-              "WhenOpened": "2024-07-04T03:02:29.8Z",
-              "EditorCaption": ""
+              "DocumentIndex": 2,
+              "Title": "GameMain.cs [Design]",
+              "DocumentMoniker": "C:\\Projects\\c#\\VERYEYRYERYEYRYER NEW\\ShootTheZombiesRedo\\GameMain.cs",
+              "RelativeDocumentMoniker": "ShootTheZombiesRedo\\GameMain.cs",
+              "ToolTip": "C:\\Projects\\c#\\VERYEYRYERYEYRYER NEW\\ShootTheZombiesRedo\\GameMain.cs [Design]",
+              "RelativeToolTip": "ShootTheZombiesRedo\\GameMain.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-02T08:34:27.395Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "EndScreen.cs",
+              "DocumentMoniker": "C:\\Projects\\c#\\VERYEYRYERYEYRYER NEW\\ShootTheZombiesRedo\\EndScreen.cs",
+              "RelativeDocumentMoniker": "ShootTheZombiesRedo\\EndScreen.cs",
+              "ToolTip": "C:\\Projects\\c#\\VERYEYRYERYEYRYER NEW\\ShootTheZombiesRedo\\EndScreen.cs",
+              "RelativeToolTip": "ShootTheZombiesRedo\\EndScreen.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAmwCYAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-03T11:52:18.73Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "StartMenu.cs [Design]",
+              "DocumentMoniker": "C:\\Projects\\c#\\VERYEYRYERYEYRYER NEW\\ShootTheZombiesRedo\\StartMenu.cs",
+              "RelativeDocumentMoniker": "ShootTheZombiesRedo\\StartMenu.cs",
+              "ToolTip": "C:\\Projects\\c#\\VERYEYRYERYEYRYER NEW\\ShootTheZombiesRedo\\StartMenu.cs [Design]",
+              "RelativeToolTip": "ShootTheZombiesRedo\\StartMenu.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-04T03:22:29.844Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ControlsScreen.cs [Design]",
+              "DocumentMoniker": "C:\\Projects\\c#\\VERYEYRYERYEYRYER NEW\\ShootTheZombiesRedo\\ControlsScreen.cs",
+              "RelativeDocumentMoniker": "ShootTheZombiesRedo\\ControlsScreen.cs",
+              "ToolTip": "C:\\Projects\\c#\\VERYEYRYERYEYRYER NEW\\ShootTheZombiesRedo\\ControlsScreen.cs [Design]*",
+              "RelativeToolTip": "ShootTheZombiesRedo\\ControlsScreen.cs [Design]*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-04T03:31:50.359Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ControlsScreen.cs",
+              "DocumentMoniker": "C:\\Projects\\c#\\VERYEYRYERYEYRYER NEW\\ShootTheZombiesRedo\\ControlsScreen.cs",
+              "RelativeDocumentMoniker": "ShootTheZombiesRedo\\ControlsScreen.cs",
+              "ToolTip": "C:\\Projects\\c#\\VERYEYRYERYEYRYER NEW\\ShootTheZombiesRedo\\ControlsScreen.cs*",
+              "RelativeToolTip": "ShootTheZombiesRedo\\ControlsScreen.cs*",
+              "ViewState": "AQIAAC4AAAAAAAAAAAAkwEYAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-04T03:32:59.683Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "EndScreen.cs [Design]",
+              "DocumentMoniker": "C:\\Projects\\c#\\VERYEYRYERYEYRYER NEW\\ShootTheZombiesRedo\\EndScreen.cs",
+              "RelativeDocumentMoniker": "ShootTheZombiesRedo\\EndScreen.cs",
+              "ToolTip": "C:\\Projects\\c#\\VERYEYRYERYEYRYER NEW\\ShootTheZombiesRedo\\EndScreen.cs [Design]",
+              "RelativeToolTip": "ShootTheZombiesRedo\\EndScreen.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-03T05:29:16.786Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "StartMenu.cs",
+              "DocumentMoniker": "C:\\Projects\\c#\\VERYEYRYERYEYRYER NEW\\ShootTheZombiesRedo\\StartMenu.cs",
+              "RelativeDocumentMoniker": "ShootTheZombiesRedo\\StartMenu.cs",
+              "ToolTip": "C:\\Projects\\c#\\VERYEYRYERYEYRYER NEW\\ShootTheZombiesRedo\\StartMenu.cs",
+              "RelativeToolTip": "ShootTheZombiesRedo\\StartMenu.cs",
+              "ViewState": "AQIAAC4AAAAAAAAAAAAIwEsAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-04T03:37:23.627Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "GameShop.cs [Design]",
+              "DocumentMoniker": "C:\\Projects\\c#\\VERYEYRYERYEYRYER NEW\\ShootTheZombiesRedo\\GameShop.cs",
+              "RelativeDocumentMoniker": "ShootTheZombiesRedo\\GameShop.cs",
+              "ToolTip": "C:\\Projects\\c#\\VERYEYRYERYEYRYER NEW\\ShootTheZombiesRedo\\GameShop.cs [Design]",
+              "RelativeToolTip": "ShootTheZombiesRedo\\GameShop.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-02T08:34:39.012Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "Bullet.cs",
               "DocumentMoniker": "C:\\Projects\\c#\\VERYEYRYERYEYRYER NEW\\ShootTheZombiesRedo\\Bullet.cs",
               "RelativeDocumentMoniker": "ShootTheZombiesRedo\\Bullet.cs",
@@ -112,56 +214,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "GameMain.cs [Design]",
-              "DocumentMoniker": "C:\\Projects\\c#\\VERYEYRYERYEYRYER NEW\\ShootTheZombiesRedo\\GameMain.cs",
-              "RelativeDocumentMoniker": "ShootTheZombiesRedo\\GameMain.cs",
-              "ToolTip": "C:\\Projects\\c#\\VERYEYRYERYEYRYER NEW\\ShootTheZombiesRedo\\GameMain.cs [Design]",
-              "RelativeToolTip": "ShootTheZombiesRedo\\GameMain.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-02T08:34:27.395Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "EndScreen.cs [Design]",
-              "DocumentMoniker": "C:\\Projects\\c#\\VERYEYRYERYEYRYER NEW\\ShootTheZombiesRedo\\EndScreen.cs",
-              "RelativeDocumentMoniker": "ShootTheZombiesRedo\\EndScreen.cs",
-              "ToolTip": "C:\\Projects\\c#\\VERYEYRYERYEYRYER NEW\\ShootTheZombiesRedo\\EndScreen.cs [Design]",
-              "RelativeToolTip": "ShootTheZombiesRedo\\EndScreen.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-03T05:29:16.786Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "GameShop.cs [Design]",
-              "DocumentMoniker": "C:\\Projects\\c#\\VERYEYRYERYEYRYER NEW\\ShootTheZombiesRedo\\GameShop.cs",
-              "RelativeDocumentMoniker": "ShootTheZombiesRedo\\GameShop.cs",
-              "ToolTip": "C:\\Projects\\c#\\VERYEYRYERYEYRYER NEW\\ShootTheZombiesRedo\\GameShop.cs [Design]",
-              "RelativeToolTip": "ShootTheZombiesRedo\\GameShop.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-02T08:34:39.012Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "EndScreen.cs",
-              "DocumentMoniker": "C:\\Projects\\c#\\VERYEYRYERYEYRYER NEW\\ShootTheZombiesRedo\\EndScreen.cs",
-              "RelativeDocumentMoniker": "ShootTheZombiesRedo\\EndScreen.cs",
-              "ToolTip": "C:\\Projects\\c#\\VERYEYRYERYEYRYER NEW\\ShootTheZombiesRedo\\EndScreen.cs",
-              "RelativeToolTip": "ShootTheZombiesRedo\\EndScreen.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAABUAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-03T11:52:18.73Z",
+              "DocumentIndex": 11,
+              "Title": "Resources.resx",
+              "DocumentMoniker": "C:\\Projects\\c#\\VERYEYRYERYEYRYER NEW\\ShootTheZombiesRedo\\Properties\\Resources.resx",
+              "RelativeDocumentMoniker": "ShootTheZombiesRedo\\Properties\\Resources.resx",
+              "ToolTip": "C:\\Projects\\c#\\VERYEYRYERYEYRYER NEW\\ShootTheZombiesRedo\\Properties\\Resources.resx",
+              "RelativeToolTip": "ShootTheZombiesRedo\\Properties\\Resources.resx",
+              "ViewState": "AQIAAH0AAAAAAAAAAAAkwI0AAAAHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2024-07-04T03:02:29.8Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 12,
               "Title": "GameMain.Designer.cs",
               "DocumentMoniker": "C:\\Projects\\c#\\VERYEYRYERYEYRYER NEW\\ShootTheZombiesRedo\\GameMain.Designer.cs",
               "RelativeDocumentMoniker": "ShootTheZombiesRedo\\GameMain.Designer.cs",

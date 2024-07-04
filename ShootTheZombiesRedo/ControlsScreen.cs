@@ -44,5 +44,31 @@ namespace ShootTheZombiesRedo
 
             }
         }
+
+        private void KeyIsDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Space) 
+            {
+                timerControls.Stop();
+
+                GameMain form2 = new GameMain();
+                form2.Show();
+                this.Close();
+            }
+            if (e.KeyCode == Keys.Escape) Application.Exit();
+            if (e.KeyCode == Keys.M)
+            {
+                if (StartMenu.mute == false)
+                {
+                    StartMenu.mute = true;
+                    StartMenu.player.Stop();
+                }
+                else
+                {
+                    StartMenu.mute = false;
+                    StartMenu.player.Play();
+                }
+            }
+        }
     }
 }

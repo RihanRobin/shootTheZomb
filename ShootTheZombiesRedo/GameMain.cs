@@ -7,6 +7,7 @@ using System.IO;
 using System.Linq;
 using System.Reflection.Emit;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Microsoft.VisualBasic.FileIO;
@@ -32,6 +33,7 @@ namespace ShootTheZombiesRedo
         bool goLeft, goRight, goUp, goDown;
         bool inShop = false;
         bool isAmmoDropped = false;
+
         
         int playerX = 485;
         int playerY = 485;
@@ -127,7 +129,19 @@ namespace ShootTheZombiesRedo
                 ShootBullet(shootDirection);
                 if (ammo < 1) DropAmmo();
             }
-
+            if (e.KeyCode == Keys.M)
+            {
+                if (StartMenu.mute == false)
+                {
+                    StartMenu.mute = true;
+                    StartMenu.player.Stop();
+                }
+                else
+                {
+                    StartMenu.mute = false;
+                    StartMenu.player.Play();
+                }
+            }
             if (e.KeyCode == Keys.Escape) Application.Exit(); // Exit game
         }
 
