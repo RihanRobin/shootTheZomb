@@ -16,15 +16,11 @@ namespace ShootTheZombiesRedo
         // Images and movements for player and zombie animations
         Image playerImage;
         List<string> playerMovements = new List<string>();
-        List<string> zombieMovements = new List<string>();
-        List<string> playerHurt = new List<string>();
-        List<string> playerDeath = new List<string>();
 
         // Player and game state variables
         int frameIndex = 0;
         int slowDownFrameRate = 0;
         bool goLeft, goRight, goUp, goDown;
-        bool gameOver = false;
         bool inShop = false;
         bool isAmmoDropped = false;
         
@@ -34,7 +30,6 @@ namespace ShootTheZombiesRedo
         int playerWidth = 37;
         int playerSpeed = 10;
         int zombieSpeed = 2;
-        //int score = 0;
         Random rnd = new Random();
         string shootDirection;
         Rectangle playerBounds;  // Player collision bounds
@@ -156,7 +151,7 @@ namespace ShootTheZombiesRedo
             UpdateHealthBar();
             this.Invalidate(); // Redraw the form
             labelScore.Text = "Score : " + score;
-            labelCoin.Text = "Coin(s) : " + coin;
+            labelCoin.Text = "Money : $" + coin;
 
             if (ammo == 0 && !isAmmoDropped)
             {
@@ -208,9 +203,6 @@ namespace ShootTheZombiesRedo
             this.DoubleBuffered = true;
             playerMovements = Directory.GetFiles("walk", "*.png").ToList();
             playerImage = Image.FromFile(playerMovements[0]);
-            playerHurt = Directory.GetFiles("hurt", "*.png").ToList();
-            playerDeath = Directory.GetFiles("death", "*.png").ToList();
-            zombieMovements = Directory.GetFiles("zwalk", "*.png").ToList();
             playerBounds = new Rectangle(playerX, playerY, playerWidth, playerHeight);
 
             
@@ -231,22 +223,6 @@ namespace ShootTheZombiesRedo
 
             if (frameIndex > end || frameIndex < start) frameIndex = start;
             playerImage = Image.FromFile(playerMovements[frameIndex]);
-        }
-
-        private void AnimateZombie(PictureBox zombie, int start, int end)
-        {
-            int frameIndex = zombieFrameIndices[zombie];
-            zombie.BringToFront();
-            //slowDownFrameRate++;
-            if (slowDownFrameRate == 4)
-            {
-                frameIndex++;
-                slowDownFrameRate = 0;
-            }
-
-            if (frameIndex > end || frameIndex < start) frameIndex = start;
-            zombie.Image = Image.FromFile(zombieMovements[frameIndex]);
-            zombieFrameIndices[zombie] = frameIndex;
         }
 
         private void UpdatePlayerMovement()
@@ -301,7 +277,7 @@ namespace ShootTheZombiesRedo
 
             if (!inShop && playerBounds.IntersectsWith(door.Bounds))
             {
-                this.Hide();
+                
                 mainTimer.Stop();
                 GameShop frm = new GameShop();
                 frm.score = score;
@@ -309,6 +285,7 @@ namespace ShootTheZombiesRedo
                 frm.ammo = ammo;
                 frm.coin = coin;
                 frm.Show();
+                this.Hide();
                 inShop = true;
             }
         }
@@ -321,15 +298,10 @@ namespace ShootTheZombiesRedo
             }
             else
             {
-                EndScreen form2 = new EndScreen();
-                form2.coin = coin;
-                form2.score = score;
-
+                EndScreen form2 = new EndScreen(score, coin);
 
                 mainTimer.Stop();
                 mainTimer.Dispose();
-                gameOver = true;
-
                 
                 form2.Show();
                 this.Close();
@@ -360,10 +332,7 @@ namespace ShootTheZombiesRedo
                 zombie.Top += zombieSpeed;
                 direction = "down";
             }
-
-            zombieDirections[zombie] = direction;
-            AnimateZombie(zombie, 6, 12); // Assuming zombies have 6 frames per direction
-
+            zombie.Image = Image.FromFile("walkdown (1).png");
             foreach (Control x in this.Controls)
             {
                 if (x is PictureBox && x.Tag == "zombie" && x != zombie && x.Bounds.IntersectsWith(zombie.Bounds))
@@ -396,11 +365,11 @@ namespace ShootTheZombiesRedo
         {
             isAmmoDropped = true;
             PictureBox ammo = new PictureBox();
-            ammo.Image = Image.FromFile("fireammo2.png");
+            ammo.Image = Image.FromFile("fireammo1.png");
             ammo.BackColor = Color.Transparent;
             ammo.SizeMode = PictureBoxSizeMode.AutoSize;
-            ammo.Left = rnd.Next(10, this.ClientSize.Width - ammo.Width);
-            ammo.Top = rnd.Next(50, this.ClientSize.Height - ammo.Height);
+            ammo.Left = rnd.Next(10, this.ClientSize.Width - ammo.Width - 100);
+            ammo.Top = rnd.Next(50, this.ClientSize.Height - ammo.Height - 100);
             ammo.Tag = "ammo";
             this.Controls.Add(ammo);
 

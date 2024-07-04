@@ -49,9 +49,9 @@
             // 
             // healthBar
             // 
-            this.healthBar.Location = new System.Drawing.Point(77, 4);
+            this.healthBar.Location = new System.Drawing.Point(79, 7);
             this.healthBar.Name = "healthBar";
-            this.healthBar.Size = new System.Drawing.Size(346, 16);
+            this.healthBar.Size = new System.Drawing.Size(324, 13);
             this.healthBar.TabIndex = 1;
             // 
             // label1
@@ -60,7 +60,7 @@
             this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(21, 4);
+            this.label1.Location = new System.Drawing.Point(21, 5);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(52, 16);
             this.label1.TabIndex = 2;
@@ -71,7 +71,7 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(926, 4);
+            this.label2.Location = new System.Drawing.Point(926, 6);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(62, 13);
             this.label2.TabIndex = 3;
@@ -104,7 +104,7 @@
             this.labelCoin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.labelCoin.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelCoin.ForeColor = System.Drawing.Color.White;
-            this.labelCoin.Location = new System.Drawing.Point(541, 4);
+            this.labelCoin.Location = new System.Drawing.Point(529, 4);
             this.labelCoin.Name = "labelCoin";
             this.labelCoin.Size = new System.Drawing.Size(11, 16);
             this.labelCoin.TabIndex = 5;
@@ -113,7 +113,7 @@
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.pictureBox1.Location = new System.Drawing.Point(-1, -7);
+            this.pictureBox1.Location = new System.Drawing.Point(-1, -6);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(1001, 32);
             this.pictureBox1.TabIndex = 6;

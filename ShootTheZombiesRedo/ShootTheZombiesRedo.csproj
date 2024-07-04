@@ -162,5 +162,14 @@
   <ItemGroup>
     <None Include="bin\Debug\title background.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\health %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\health %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\playerDead.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

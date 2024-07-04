@@ -12,13 +12,18 @@ namespace ShootTheZombiesRedo
 {
     public partial class EndScreen : Form
     {
-        public int score { get; set; }
-        public int coin { get; set; }
-        public EndScreen()
+        int score;
+        public EndScreen(int score, int coin)
         {
             InitializeComponent();
 
-            labelStats.Text = "Your Score Was : " + score;
+            this.score = score;
+            labelStats.Text = "Zombies Killed : " + this.score + "\nCash on hand : " + coin;
+        }
+
+        private void KeyIsDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Escape) Application.Exit(); // Exit game
         }
     }
 }
